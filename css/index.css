@@ -23,3 +23,15 @@ h6 {
   font-family: 'DM Sans Display', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  padding-inline-start: 14px;
+  padding-inline-end: 15px; }
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto; } }
