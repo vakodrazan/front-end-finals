@@ -1,0 +1,25 @@
+@import "variables";
+
+.masthead {
+  padding-block-start: 31px;
+}
+
+.masthead__headings {
+  @include flex-column-reverse();
+
+  > h2 {
+    font-size: 52px;
+    padding-block-start: 61px;
+    padding-block-end: 65px;
+  }
+
+  > p {
+    color: $dark-gray;
+  }
+}
+
+.masthead__description {
+  font-size: 18px;
+  line-height: 1.9;
+  padding-block-end: 82px;
+}
