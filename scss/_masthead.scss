@@ -31,6 +31,10 @@
 .masthead__gallery__list__image {
   display: none;
   padding-inline-end: 11px;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+  }
 }
 
 
