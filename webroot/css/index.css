@@ -38,3 +38,19 @@ img {
       max-width: 1440px;
       margin-left: auto;
       margin-right: auto; } }
+
+.header {
+  background-color: #434CCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.menu {
+  background-image: url("../images/icon_menu.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 50% 50%;
+  color: transparent; }
+
+.navigation {
+  display: none; }
