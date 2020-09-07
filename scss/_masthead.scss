@@ -23,3 +23,24 @@
   line-height: 1.9;
   padding-block-end: 82px;
 }
+
+.masthead__gallery__list {
+  @include flex-row();
+}
+
+.masthead__gallery__list__image {
+  display: none;
+  padding-inline-end: 11px;
+}
+
+
+.masthead__gallery__list__image--rock-carvings {
+  display: block;
+}
+.masthead__gallery__list__image--stairs {
+  display: block;
+}
+.masthead__gallery__list__image--ripples {
+  display: block;
+  margin-inline-end: -6rem;
+}
