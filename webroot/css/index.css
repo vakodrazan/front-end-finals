@@ -24,6 +24,9 @@ h6 {
   font-weight: normal;
   font-style: normal; }
 
+a {
+  text-decoration: none; }
+
 img {
   max-width: 100%; }
 
