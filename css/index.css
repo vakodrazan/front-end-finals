@@ -124,3 +124,73 @@ body > label {
   opacity: 0;
   transition: opacity 1s;
   background-color: rgba(0, 0, 0, 0.25); }
+
+.section_mineral-carving {
+  padding-block-start: 92px; }
+  .section_mineral-carving > .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between; }
+
+.section_mineral-carving__desc > header > h3 {
+  font-size: 40px; }
+
+.section_mineral-carving__desc > header > p {
+  font-size: 18px;
+  padding-block-end: 2rem; }
+
+.section_mineral-carving__desc > p {
+  color: rgba(0, 0, 0, 0.5);
+  padding-block-end: 31px; }
+
+.section_mineral-carving__desc__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100px; }
+
+.section_mineral-carving__desc__list__icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 16px;
+  text-indent: -999px;
+  overflow: hidden; }
+
+.section_mineral-carving__desc__list__icon--facebook {
+  background-image: url("../images/icon_facebook.svg"); }
+
+.section_mineral-carving__desc__list__icon--twitter {
+  background-image: url("../images/icon_twitter.svg"); }
+
+.section_mineral-carving__desc__list__icon--instagram {
+  background-image: url("../images/icon_instagram.svg"); }
+
+.section_mineral-carving__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .section_mineral-carving__info > li > span {
+    color: rgba(0, 0, 0, 0.5); }
+  .section_mineral-carving__info > li > p {
+    font-weight: 700; }
+
+.section_mineral-carving__info--date {
+  flex-basis: 50%;
+  padding-block-end: 40px; }
+
+.section_mineral-carving__info--location {
+  flex-basis: 50%;
+  padding-block-end: 40px; }
+
+.section_mineral-carving__info--camera {
+  flex-basis: 50%; }
+  .section_mineral-carving__info--camera p {
+    max-width: 86px; }
+
+.section_mineral-carving__info--lens {
+  flex-basis: 50%; }
