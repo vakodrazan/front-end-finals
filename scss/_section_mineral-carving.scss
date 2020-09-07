@@ -54,3 +54,41 @@
 .section_mineral-carving__desc__list__icon--instagram {
   background-image: url("#{$path-to-image}icon_instagram.svg");
 }
+
+.section_mineral-carving__info {
+  @include flex-row();
+  flex-wrap: wrap;
+
+  > li {
+    > span {
+      color: $dark-gray;
+    }
+
+    > p {
+      font-weight: 700;
+    }
+  }
+}
+
+.section_mineral-carving__info--date {
+  flex-basis: 50%;
+  padding-block-end: 40px;
+}
+
+
+.section_mineral-carving__info--location {
+  flex-basis: 50%;
+  padding-block-end: 40px;
+}
+
+.section_mineral-carving__info--camera {
+  flex-basis: 50%;
+
+  p {
+    max-width: 86px;
+  }
+}
+
+.section_mineral-carving__info--lens {
+  flex-basis: 50%;
+}
