@@ -132,16 +132,17 @@ body > label {
     flex-direction: column-reverse;
     justify-content: space-between; }
 
-.section_mineral-carving__desc > header > h3 {
-  font-size: 40px; }
-
-.section_mineral-carving__desc > header > p {
-  font-size: 18px;
-  padding-block-end: 2rem; }
-
-.section_mineral-carving__desc > p {
-  color: rgba(0, 0, 0, 0.5);
-  padding-block-end: 31px; }
+.section_mineral-carving__desc {
+  padding-block-start: 75px; }
+  .section_mineral-carving__desc > header > h3 {
+    font-size: 40px;
+    padding-block-end: 31px; }
+  .section_mineral-carving__desc > header > p {
+    font-size: 18px;
+    padding-block-end: 2rem; }
+  .section_mineral-carving__desc > p {
+    color: rgba(0, 0, 0, 0.5);
+    padding-block-end: 31px; }
 
 .section_mineral-carving__desc__list {
   display: flex;
