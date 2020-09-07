@@ -1,0 +1,13 @@
+@import "variables";
+
+.menu {
+  background-image: url("#{$path-to-image}icon_menu.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 50% 50%;
+  color: transparent;
+}
+
+.navigation {
+  display: none;
+}
