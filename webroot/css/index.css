@@ -2,7 +2,8 @@ body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 ul {
   margin: 0;
@@ -28,7 +29,8 @@ a {
   text-decoration: none; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  border-radius: 10px; }
 
 .container {
   padding-inline-start: 14px;
@@ -55,6 +57,48 @@ img {
   font-size: 24px; }
   .header__heading > a {
     color: #fff; }
+
+.masthead {
+  padding-block-start: 31px; }
+
+.masthead__headings {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between; }
+  .masthead__headings > h2 {
+    font-size: 52px;
+    padding-block-start: 61px;
+    padding-block-end: 65px; }
+  .masthead__headings > p {
+    color: rgba(0, 0, 0, 0.5); }
+
+.masthead__description {
+  font-size: 18px;
+  line-height: 1.9;
+  padding-block-end: 82px; }
+
+.masthead__gallery__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.masthead__gallery__list__image {
+  display: none;
+  padding-inline-end: 11px; }
+  @media (min-width: 1440px) {
+    .masthead__gallery__list__image {
+      display: block; } }
+
+.masthead__gallery__list__image--rock-carvings {
+  display: block; }
+
+.masthead__gallery__list__image--stairs {
+  display: block; }
+
+.masthead__gallery__list__image--ripples {
+  display: block;
+  margin-inline-end: -6rem; }
 
 .menu {
   background-image: url("../images/icon_menu.svg");
