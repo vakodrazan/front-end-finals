@@ -1,3 +1,9 @@
+// The basic style for all the elements
 @import "default";
+
+// This is for the whole container in the design
 @import "container";
+
+// Each components in the design
 @import "header";
+@import "masthead";
