@@ -28,18 +28,46 @@
     @include flex-row();
     @include reset-list();
     border: none;
+    padding-block-end: $based_unit;
   
+    > label {
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding-block-end: 12px;
+    }
   
-  > input {
-    width: 346px;
-    box-sizing: border-box;
-    border: 1px solid $light-gray;
-    line-height: 1.5;
-    padding-inline-start: $based_unit;
-    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-    font-size: $based_unit;
-    border-radius: $radius;
+    > input {
+      width: 346px;
+      box-sizing: border-box;
+      border: 1px solid $light-gray;
+      line-height: 1.5;
+      padding-inline-start: $based_unit;
+      font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+      font-size: $based_unit;
+      border-radius: $radius;
+      padding-block-start: $padding-top;
+      padding-block-end: $padding-bottom;
+    }
   }
+
+  > button {
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    color: $white;
+    border: none;
+    border-radius: $radius;
+    background-color: $blue;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    padding-inline-start: 45px;
+    padding-inline-end: 45px;
+    padding-block-start: $padding-top;
+    padding-block-end: $padding-bottom;
+  }
+
+  > button:hover {
+    background-color:  rgba(67, 76, 204, .8);
   }
 
 }
