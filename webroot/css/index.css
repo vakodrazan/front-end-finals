@@ -146,11 +146,24 @@ img {
   background-position: 50% 50%;
   color: transparent; }
 
-.navigation {
-  display: none; }
-
 body > [type="checkbox"] {
   display: none; }
+
+body > .navigation {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s; }
+
+body > [type="checkbox"]:checked ~ .navigation {
+  transform: translateX(0); }
 
 body > label {
   position: absolute;
@@ -163,6 +176,16 @@ body > label {
   opacity: 0;
   transition: opacity 1s;
   background-color: rgba(0, 0, 0, 0.25); }
+
+body > [type="checkbox"]:checked ~ main {
+  z-index: 1; }
+
+body > [type="checkbox"]:checked ~ label {
+  z-index: 2;
+  opacity: 1; }
+
+.navigation__list {
+  order: 1; }
 
 .section_mineral-carving {
   padding-block-start: 92px;
