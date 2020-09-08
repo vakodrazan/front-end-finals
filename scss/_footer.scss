@@ -4,7 +4,7 @@
   background-color: $white;
   padding-block-start: 75px;
   padding-block-end: 28px;
-  position: relative;
+  // position: relative;
 }
 
 .footer__info {
@@ -20,10 +20,10 @@
   width: 100vw;
   border-bottom: 2px solid rgba(0, 0, 0, .1);
 
-  & {
-    margin: 0;
-    padding: 0;
-  }
+  // & {
+  //   margin: 0;
+  //   padding: 0;
+  // }
 }
 
 .footer__info__about {
