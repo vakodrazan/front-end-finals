@@ -9,6 +9,11 @@
 
 .footer__info {
   padding-block-end: 72px;
+
+  @media (min-width: $breakpoint-desktop) {
+    @include flex-row();
+    align-items: flex-start;
+  }
 }
 
 // .footer::after {
@@ -27,7 +32,7 @@
 // }
 
 .footer__info__about {
-  padding-block-end: 18px;
+  padding-block-end: 78px;
 
   > span {
     font-family: 'DM Sans Display', Arial, Helvetica, sans-serif;
@@ -43,6 +48,11 @@
     color: $dark-gray;
     padding-block-start: 23px;
     padding-block-end: 38px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 270px;
+    padding-block-end: 0;
   }
 }
 
@@ -66,7 +76,6 @@ li.footer__info__pagination__list--homepage a {
 .footer__info__author__item {
   display: flex;
   flex-direction: row;
-  padding-block-end: 27px;
 
   > a img {
     max-width: 70px;
@@ -85,6 +94,10 @@ li.footer__info__pagination__list--homepage a {
       font-size: 12px;
     }
   }
+}
+
+.footer__info__author__item:not(:last-of-type) {
+  padding-block-end: 27px;
 }
 
 .footer__status {
