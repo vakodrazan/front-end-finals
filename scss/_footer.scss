@@ -41,3 +41,19 @@ li.footer__info__pagination__list--homepage a {
   font-weight: 700;
   color: $black;
 }
+
+.footer__info__author__item {
+  display: flex;
+  flex-direction: row;
+
+
+  > a img {
+    max-width: 70px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 30px;
+  }
+}

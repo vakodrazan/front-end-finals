@@ -288,3 +288,13 @@ body > label {
 li.footer__info__pagination__list--homepage a {
   font-weight: 700;
   color: #000; }
+
+.footer__info__author__item {
+  display: flex;
+  flex-direction: row; }
+  .footer__info__author__item > a img {
+    max-width: 70px; }
+  .footer__info__author__item > div {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 30px; }
