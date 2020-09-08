@@ -270,6 +270,20 @@ body > label {
 .section_subscription__form > button:hover {
   background-color: rgba(67, 76, 204, 0.8); }
 
+@media (min-width: 1440px) {
+  .section_subscription__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; } }
+
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; } }
+
 .social-media {
   display: flex;
   flex-direction: row;

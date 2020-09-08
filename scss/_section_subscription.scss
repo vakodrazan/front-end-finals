@@ -20,6 +20,7 @@
     text-transform: uppercase;
     letter-spacing: 4.8px;
   }
+
 }
 
 .section_subscription__form {
@@ -70,4 +71,14 @@
     background-color:  rgba(67, 76, 204, .8);
   }
 
+  @media (min-width: $breakpoint-desktop) {
+    @include flex-row();
+  }
+}
+
+
+@media (min-width: $breakpoint-desktop) {
+  .container {
+    @include flex-row();
+  }
 }
