@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "DM Sans Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Sans Bold"), local("DM-Sans-Bold"), url("../fonts/dm_sans_700.woff2") format(woff2), url("../fonts/dm_sans_700.woff") format(woff); }
+
+@font-face {
+  font-family: "DM Sans Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans Regular"), local("DM-Sans-Regular"), url("../fonts/dm_sans_400.woff2") format(woff2), url("../fonts/dm_sans_400.woff") format(woff); }
+
+@font-face {
+  font-family: "DM Serif Display Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Serif Display Regular"), local("DM-Serif-Display-Regular"), url("../fonts/dm_serif_display_400.woff2") format(woff2), url("../fonts/dm_serif_display_400.woff") format(woff); }
+
 body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
   font-size: 16px;
