@@ -103,4 +103,12 @@ li.footer__info__pagination__list--homepage a {
 .footer__status {
   color: $dark-gray;
   padding-block-start: 27px;
+
+  > p span {
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    @include flex-row();
+  }
 }
