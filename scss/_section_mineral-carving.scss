@@ -38,13 +38,16 @@
 }
 
 .section_mineral-carving__desc__list__icon {
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 16px;
-  text-indent: -999px;
-  overflow: hidden;
+  // max-width: 100px;
+  > a {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 16px;
+    text-indent: -999px;
+    overflow: hidden;
+  }
 }
 
 .section_mineral-carving__desc__list__icon--facebook {
