@@ -153,18 +153,30 @@ body > label {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between; }
+    @media (min-width: 1440px) {
+      .section_mineral-carving > .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center; } }
 
 .section_mineral-carving__desc {
   padding-block-start: 75px; }
   .section_mineral-carving__desc > header > h3 {
     font-size: 40px;
     padding-block-end: 31px; }
+    @media (min-width: 1440px) {
+      .section_mineral-carving__desc > header > h3 {
+        font-size: 52px; } }
   .section_mineral-carving__desc > header > p {
     font-size: 18px;
     padding-block-end: 2rem; }
   .section_mineral-carving__desc > p {
     color: rgba(0, 0, 0, 0.5);
     padding-block-end: 31px; }
+  @media (min-width: 1440px) {
+    .section_mineral-carving__desc {
+      max-width: 570px; } }
 
 .section_mineral-carving__info {
   display: flex;
@@ -189,6 +201,9 @@ body > label {
   flex-basis: 50%; }
   .section_mineral-carving__info--camera p {
     max-width: 86px; }
+    @media (min-width: 1440px) {
+      .section_mineral-carving__info--camera p {
+        max-width: inherit; } }
 
 .section_mineral-carving__info--lens {
   flex-basis: 50%; }
