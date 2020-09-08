@@ -5,16 +5,22 @@
   padding-block-start: 75px;
 }
 
-.footer__info__desc {
+.footer__info__about {
+  padding-block-end: 18px;
 
   > span {
     font-family: 'DM Sans Display', Arial, Helvetica, sans-serif;
     font-size: 24px;
     text-transform: uppercase;
-    padding-block-end: 23px;
 
     > a {
       color: $black;
     }
+  }
+
+  > p {
+    color: $dark-gray;
+    padding-block-start: 23px;
+    padding-block-end: 38px;
   }
 }
