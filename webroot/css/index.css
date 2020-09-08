@@ -3,7 +3,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: rgba(67, 76, 204, 0.05); }
 
 ul {
   margin: 0;
@@ -259,3 +260,15 @@ body > label {
 
 .social-media__icon--instagram {
   background-image: url("../images/icon_instagram.svg"); }
+
+.footer {
+  background-color: #fff;
+  padding-block-start: 75px; }
+
+.footer__info__desc > span {
+  font-family: 'DM Sans Display', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-block-end: 23px; }
+  .footer__info__desc > span > a {
+    color: #000; }
