@@ -223,7 +223,13 @@ body > label {
   margin: 0;
   padding: 0;
   list-style: none;
-  border: none; }
+  border: none;
+  padding-block-end: 16px; }
+  .section_subscription__form > fieldset > label {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-block-end: 12px; }
   .section_subscription__form > fieldset > input {
     width: 346px;
     box-sizing: border-box;
@@ -232,4 +238,23 @@ body > label {
     padding-inline-start: 16px;
     font-family: 'DM Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding-block-start: 13px;
+    padding-block-end: 11px; }
+
+.section_subscription__form > button {
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #434CCC;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  padding-inline-start: 45px;
+  padding-inline-end: 45px;
+  padding-block-start: 13px;
+  padding-block-end: 11px; }
+
+.section_subscription__form > button:hover {
+  background-color: rgba(67, 76, 204, 0.8); }
