@@ -30,7 +30,7 @@ a {
 
 img {
   max-width: 100%;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 .container {
   padding-inline-start: 14px;
@@ -196,3 +196,40 @@ body > label {
 
 .section_mineral-carving__info--lens {
   flex-basis: 50%; }
+
+.section_subscription {
+  background-color: #FFDD78;
+  padding-block-start: 63px;
+  padding-block-end: 54px; }
+
+.section_subscription__header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between; }
+  .section_subscription__header > h3 {
+    font-size: 43px;
+    line-height: 1.3;
+    padding-block-start: 19px;
+    padding-block-end: 44px; }
+  .section_subscription__header > p {
+    text-transform: uppercase;
+    letter-spacing: 4.8px; }
+
+.section_subscription__form > fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none; }
+  .section_subscription__form > fieldset > input {
+    width: 346px;
+    box-sizing: border-box;
+    border: 1px solid #DADADA;
+    line-height: 1.5;
+    padding-inline-start: 16px;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px; }
