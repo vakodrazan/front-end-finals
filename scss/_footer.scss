@@ -3,6 +3,27 @@
 .footer {
   background-color: $white;
   padding-block-start: 75px;
+  padding-block-end: 28px;
+  position: relative;
+}
+
+.footer__info {
+  padding-block-end: 72px;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  width: 100vw;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+
+  & {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .footer__info__about {
@@ -64,4 +85,9 @@ li.footer__info__pagination__list--homepage a {
       font-size: 12px;
     }
   }
+}
+
+.footer__status {
+  color: $dark-gray;
+  padding-block-start: 27px;
 }
