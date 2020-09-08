@@ -32,35 +32,6 @@
   }
 }
 
-.section_mineral-carving__desc__list {
-  @include flex-row();
-  max-width: 100px;
-}
-
-.section_mineral-carving__desc__list__icon {
-  // max-width: 100px;
-  > a {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 18px;
-    height: 16px;
-    text-indent: -999px;
-    overflow: hidden;
-  }
-}
-
-.section_mineral-carving__desc__list__icon--facebook {
-  background-image: url("#{$path-to-image}icon_facebook.svg");
-}
-
-.section_mineral-carving__desc__list__icon--twitter {
-  background-image: url("#{$path-to-image}icon_twitter.svg");
-}
-
-.section_mineral-carving__desc__list__icon--instagram {
-  background-image: url("#{$path-to-image}icon_instagram.svg");
-}
 
 .section_mineral-carving__info {
   @include flex-row();
