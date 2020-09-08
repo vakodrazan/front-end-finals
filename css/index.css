@@ -153,11 +153,11 @@ body > label {
   align-items: center;
   max-width: 100px; }
 
-.section_mineral-carving__desc__list__icon {
+.section_mineral-carving__desc__list__icon > a {
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 18px;
   height: 16px;
   text-indent: -999px;
   overflow: hidden; }
