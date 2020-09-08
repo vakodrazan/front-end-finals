@@ -1,0 +1,29 @@
+.social-media {
+  @include flex-row();
+  max-width: 100px;
+}
+
+.social-media__icon {
+  // max-width: 100px;
+  > a {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 16px;
+    text-indent: -999px;
+    overflow: hidden;
+  }
+}
+
+.social-media__icon--facebook {
+  background-image: url("#{$path-to-image}icon_facebook.svg");
+}
+
+.social-media__icon--twitter {
+  background-image: url("#{$path-to-image}icon_twitter.svg");
+}
+
+.social-media__icon--instagram {
+  background-image: url("#{$path-to-image}icon_instagram.svg");
+}
