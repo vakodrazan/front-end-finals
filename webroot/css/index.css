@@ -277,3 +277,14 @@ body > label {
     color: rgba(0, 0, 0, 0.5);
     padding-block-start: 23px;
     padding-block-end: 38px; }
+
+.footer__info__pagination__list {
+  padding-block-end: 77px; }
+  .footer__info__pagination__list > li {
+    padding-block-end: 8px; }
+    .footer__info__pagination__list > li a {
+      color: rgba(0, 0, 0, 0.5); }
+
+li.footer__info__pagination__list--homepage a {
+  font-weight: 700;
+  color: #000; }
