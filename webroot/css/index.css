@@ -291,10 +291,15 @@ li.footer__info__pagination__list--homepage a {
 
 .footer__info__author__item {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  padding-block-end: 27px; }
   .footer__info__author__item > a img {
     max-width: 70px; }
   .footer__info__author__item > div {
     display: flex;
     flex-direction: column;
     padding-inline-start: 30px; }
+    .footer__info__author__item > div > span {
+      color: rgba(0, 0, 0, 0.5); }
+    .footer__info__author__item > div > time {
+      font-size: 12px; }

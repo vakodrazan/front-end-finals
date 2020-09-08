@@ -45,7 +45,7 @@ li.footer__info__pagination__list--homepage a {
 .footer__info__author__item {
   display: flex;
   flex-direction: row;
-
+  padding-block-end: 27px;
 
   > a img {
     max-width: 70px;
@@ -55,5 +55,13 @@ li.footer__info__pagination__list--homepage a {
     display: flex;
     flex-direction: column;
     padding-inline-start: 30px;
+
+    > span {
+      color: $dark-gray;
+    }
+
+    > time {
+      font-size: 12px;
+    }
   }
 }
