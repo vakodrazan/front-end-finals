@@ -70,7 +70,7 @@ img {
     font-size: 52px;
     padding-block-start: 61px;
     padding-block-end: 65px; }
-  .masthead__headings > p {
+  .masthead__headings > p a {
     color: rgba(0, 0, 0, 0.5); }
 
 .masthead__description {
