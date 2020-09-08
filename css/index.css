@@ -265,10 +265,15 @@ body > label {
   background-color: #fff;
   padding-block-start: 75px; }
 
-.footer__info__desc > span {
-  font-family: 'DM Sans Display', Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  padding-block-end: 23px; }
-  .footer__info__desc > span > a {
-    color: #000; }
+.footer__info__about {
+  padding-block-end: 18px; }
+  .footer__info__about > span {
+    font-family: 'DM Sans Display', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase; }
+    .footer__info__about > span > a {
+      color: #000; }
+  .footer__info__about > p {
+    color: rgba(0, 0, 0, 0.5);
+    padding-block-start: 23px;
+    padding-block-end: 38px; }
