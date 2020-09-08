@@ -1,1 +1,45 @@
 @import "variables";
+
+.section_subscription {
+  background-color: $light-yellow;
+  padding-block-start: 63px;
+  padding-block-end: 54px;
+}
+
+.section_subscription__header {
+  @include flex-column-reverse();
+
+  > h3 {
+    font-size: 43px;
+    line-height: 1.3;
+    padding-block-start: 19px;
+    padding-block-end: 44px;
+  }
+
+  > p {
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+  }
+}
+
+.section_subscription__form {
+
+  > fieldset {
+    @include flex-row();
+    @include reset-list();
+    border: none;
+  
+  
+  > input {
+    width: 346px;
+    box-sizing: border-box;
+    border: 1px solid $light-gray;
+    line-height: 1.5;
+    padding-inline-start: $based_unit;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    font-size: $based_unit;
+    border-radius: $radius;
+  }
+  }
+
+}
