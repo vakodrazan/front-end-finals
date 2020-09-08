@@ -7,14 +7,24 @@
 .masthead__headings {
   @include flex-column-reverse();
 
+  
+
   > h2 {
     font-size: 52px;
     padding-block-start: 61px;
     padding-block-end: 65px;
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 72px;
+    }
   }
 
   > p  a {
     color: $dark-gray;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: $masthead_width;
   }
 }
 
@@ -22,6 +32,10 @@
   font-size: 18px;
   line-height: 1.9;
   padding-block-end: 82px;
+
+  @media (min-width: $breakpoint-desktop) {
+    max-width: $masthead_width;
+  }
 }
 
 .masthead__gallery__list {
@@ -47,4 +61,18 @@
 .masthead__gallery__list__image--ripples {
   display: block;
   margin-inline-end: -6rem;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-inline-end: 0;
+  }
+}
+
+.masthead__gallery__list__image:last-of-type {
+  padding-inline-end: 0;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .masthead__gallery__viewing img {
+    width: $breakpoint-desktop;
+  }
 }
