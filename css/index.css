@@ -21,7 +21,8 @@
   --padding-top: 13px;
   --padding-bottom: 11px;
   --padding-right: 45px;
-  --padding-left: 45px; }
+  --padding-left: 45px;
+  --breakpoint-desktop: 1440px; }
 
 body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
