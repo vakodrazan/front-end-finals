@@ -17,7 +17,9 @@
   src: local("DM Serif Display Regular"), local("DM-Serif-Display-Regular"), url("../fonts/dm_serif_display_400.woff2") format(woff2), url("../fonts/dm_serif_display_400.woff") format(woff); }
 
 :root {
-  --fonts_size: 16px; }
+  --fonts_size: 16px;
+  --padding-top: 13px;
+  --padding-bottom: 11px; }
 
 body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
