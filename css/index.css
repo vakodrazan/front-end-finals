@@ -47,9 +47,15 @@ h6 {
 a {
   text-decoration: none; }
 
+a:hover {
+  text-decoration: underline; }
+
 img {
   max-width: 100%;
   border-radius: 5px; }
+
+address {
+  font-style: normal; }
 
 .container {
   padding-inline-start: 14px;
@@ -476,3 +482,5 @@ li.footer__info__pagination__list--homepage a {
       flex-direction: row;
       justify-content: space-between;
       align-items: center; } }
+  .footer__status > address a {
+    color: rgba(0, 0, 0, 0.5); }
