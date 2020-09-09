@@ -17,7 +17,7 @@
 
   @media (min-width: $breakpoint-desktop) {
     @include flex-row();
-    align-items: flex-start;
+    align-items: flex-start; // if we use align items center, everyting will be in the center but to align at the beginning
   }
 }
 
