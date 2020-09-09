@@ -16,9 +16,12 @@
   font-style: normal;
   src: local("DM Serif Display Regular"), local("DM-Serif-Display-Regular"), url("../fonts/dm_serif_display_400.woff2") format(woff2), url("../fonts/dm_serif_display_400.woff") format(woff); }
 
+:root {
+  --fonts_size: 16px; }
+
 body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: var(--fonts_size);
   line-height: 1.5;
   margin: 0;
   overflow-x: hidden;
@@ -42,7 +45,8 @@ h6 {
   margin: 0;
   font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-size: var(--fonts_size); }
 
 a {
   text-decoration: none; }
@@ -79,10 +83,13 @@ address {
     padding-block-end: 16px; }
 
 .header__heading {
-  text-transform: uppercase;
-  font-size: 24px; }
+  --fonts_size: 24px;
+  text-transform: uppercase; }
   .header__heading > a {
     color: #fff; }
+  @media (min-width: 1440px) {
+    .header__heading {
+      --fonts_size: 40px; } }
 
 .masthead {
   padding-block-start: 31px; }
@@ -92,12 +99,12 @@ address {
   flex-direction: column-reverse;
   justify-content: space-between; }
   .masthead__headings > h2 {
-    font-size: 52px;
+    --fonts_size: 52px;
     padding-block-start: 61px;
     padding-block-end: 65px; }
     @media (min-width: 1440px) {
       .masthead__headings > h2 {
-        font-size: 72px; } }
+        --fonts_size: 72px; } }
   .masthead__headings > p a {
     color: rgba(0, 0, 0, 0.5); }
   @media (min-width: 1440px) {
