@@ -3,3 +3,8 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin hide-text {
+  text-indent: -999px;
+  overflow: hidden;
+}
