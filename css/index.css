@@ -75,14 +75,16 @@ address {
 .header {
   background-color: #434CCC; }
   .header > .container {
+    --padding-top: 16px;
+    --padding-bottom: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-inline-start: 14px;
     padding-inline-end: 0;
-    padding-block-start: 16px;
-    padding-block-end: 16px; }
+    padding-block-start: --padding-top;
+    padding-block-end: --padding-bottom; }
 
 .header__heading {
   --fonts_size: 24px;
