@@ -1,7 +1,7 @@
 @import "variables";
 
 :root {
-  --fonts_size: #{$fonts};
+  --fonts_size: #{$based_unit};
 }
 
 body {
