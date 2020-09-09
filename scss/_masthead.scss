@@ -10,12 +10,12 @@
   
 
   > h2 {
-    font-size: 52px;
+    --fonts_size: 52px;
     padding-block-start: 61px;
     padding-block-end: 65px;
 
     @media (min-width: $breakpoint-desktop) {
-      font-size: 72px;
+      --fonts_size: 72px;
     }
   }
 
