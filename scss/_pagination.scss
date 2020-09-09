@@ -6,6 +6,10 @@
   background-size: 24px 24px;
   background-position: 50% 50%;
   color: transparent;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
 }
 
 body > [type="checkbox"] {
@@ -13,7 +17,10 @@ body > [type="checkbox"] {
 }
 
 body > .navigation {
-  padding: 1rem;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
@@ -24,6 +31,21 @@ body > .navigation {
   box-shadow: 0 0 50px rgba(0,0,0,.5);
   transform: translateX(-110%);
   transition: transform 0.3s;
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    background-color: transparent;
+    top: 0;
+    left: 67%;
+    right: 0;
+    bottom: auto;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    width: 324px;
+    margin-inline-end: auto;
+  }
 }
 
 
@@ -43,6 +65,10 @@ body > label {
   opacity: 0;
   transition: opacity 1s;
   background-color: rgba(0,0,0,.25);
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: initial;
+  }
 }
 
 body > [type="checkbox"]:checked ~ main {
@@ -63,6 +89,15 @@ body > [type="checkbox"]:checked ~ label {
 
     a {
       color: $dark-gray;
+
+      @media (min-width: $breakpoint-desktop) {
+        color: $white;
+      }
     }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    @include flex-row();
+    max-width: 324px;
   }
 }
