@@ -473,7 +473,8 @@ li.footer__info__pagination__list--homepage a {
 
 .footer__status {
   color: rgba(0, 0, 0, 0.5);
-  padding-block-start: 27px; }
+  padding-block-start: 27px;
+  position: relative; }
   .footer__status > p span {
     text-transform: uppercase; }
   @media (min-width: 1440px) {
@@ -484,3 +485,12 @@ li.footer__info__pagination__list--homepage a {
       align-items: center; } }
   .footer__status > address a {
     color: rgba(0, 0, 0, 0.5); }
+
+.footer__status::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  right: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  width: 100vw; }
