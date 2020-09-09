@@ -109,6 +109,8 @@ li.footer__info__pagination__list--homepage a {
 .footer__status {
   color: $dark-gray;
   padding-block-start: 27px;
+  position: relative;
+  
 
   > p span {
     text-transform: uppercase;
@@ -121,4 +123,14 @@ li.footer__info__pagination__list--homepage a {
   > address a {
     color: $dark-gray;
   }
+}
+
+.footer__status::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  right: 0;
+  border-top: 2px solid rgba(0, 0, 0, .1);
+  width: 100vw;
 }
