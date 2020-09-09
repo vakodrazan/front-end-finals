@@ -41,8 +41,9 @@
   padding-block-end: 78px;
 
   > span {
+    --fonts_size: 24px;
     font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: var(--fonts_size);
     text-transform: uppercase;
 
     > a {

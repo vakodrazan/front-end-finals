@@ -20,13 +20,13 @@
   @include flex-column-reverse();
 
   > h3 {
-    font-size: 43px;
+    --fonts_size: 43px;
     line-height: 1.3;
     padding-block-start: 19px;
     padding-block-end: 44px;
 
     @media (min-width: $breakpoint-desktop) {
-      font-size: 52px;
+      --fonts_size: 52px;
     }
   }
 
