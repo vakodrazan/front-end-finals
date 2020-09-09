@@ -8,8 +8,8 @@
     @include flex-row();
     padding-inline-start: 14px;
     padding-inline-end: 0;
-    padding-block-start: --padding-top;
-    padding-block-end: --padding-bottom;
+    padding-block-start: var(--padding-top);
+    padding-block-end: var(--padding-bottom);
   }
 }
 
