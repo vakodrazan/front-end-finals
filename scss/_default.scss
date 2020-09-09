@@ -4,6 +4,8 @@
   --fonts_size: #{$based_unit};
   --padding-top: #{$padding-top};
   --padding-bottom: #{$padding-bottom};
+  --padding-right: #{$inline_padding};
+  --padding-left: #{$inline_padding};
 }
 
 body {
