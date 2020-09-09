@@ -1,0 +1,43 @@
+@import "variables";
+.section_image-slider__header {
+  display: none;
+}
+
+.section_image-slider__gallery {
+  @include flex-row();
+}
+
+.section_image-slider__gallery__image {
+  display: none;
+  padding-inline-end: 11px;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+  }
+}
+
+
+.section_image-slider__gallery__image--rock-carvings {
+  display: block;
+}
+.section_image-slider__gallery__image--stairs {
+  display: block;
+}
+.section_image-slider__gallery__image--ripples {
+  display: block;
+  margin-inline-end: -6rem;
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-inline-end: 0;
+  }
+}
+
+.section_image-slider__gallery__image:last-of-type {
+  padding-inline-end: 0;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .section_image-slider__viewing img {
+    width: $breakpoint-desktop;
+  }
+}
