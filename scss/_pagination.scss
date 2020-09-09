@@ -17,10 +17,12 @@ body > [type="checkbox"] {
 }
 
 body > .navigation {
-  padding-block-start: 1rem;
-  padding-block-end: 1rem;
-  padding-inline-start: 1rem;
-  padding-inline-end: 1rem;
+  --padding-top: 1rem;
+
+  padding-block-start: var(--padding-top);
+  padding-block-end: var(--padding-top);
+  padding-inline-start: var(--padding-top);
+  padding-inline-end: var(--padding-top);
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
@@ -84,7 +86,9 @@ body > [type="checkbox"]:checked ~ label {
   order: 1;
 
   > li {
-    padding-block-end: 2rem;
+    --padding-bottom: 2rem;
+
+    padding-block-end: var(--padding-bottom);
     font-weight: 700;
 
     a {
