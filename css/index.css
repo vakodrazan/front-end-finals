@@ -258,13 +258,14 @@ body > [type="checkbox"]:checked ~ label {
 .section_mineral-carving__desc {
   padding-block-start: 75px; }
   .section_mineral-carving__desc > header > h3 {
-    font-size: 40px;
+    --fonts_size: 40px;
     padding-block-end: 31px; }
     @media (min-width: 1440px) {
       .section_mineral-carving__desc > header > h3 {
-        font-size: 52px; } }
+        --fonts_size: 52px; } }
   .section_mineral-carving__desc > header > p {
-    font-size: 18px;
+    --fonts_size: 18px;
+    font-size: var(--fonts_size);
     padding-block-end: 2rem; }
   .section_mineral-carving__desc > p {
     color: rgba(0, 0, 0, 0.5);
