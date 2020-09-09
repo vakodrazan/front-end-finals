@@ -10,7 +10,7 @@
   > .container {
     @include flex-column-reverse();
 
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: var(--breakpoint-desktop)) {
       @include flex-row-reverse();
     }
   }
@@ -27,7 +27,7 @@
       --padding-bottom: 31px;
       padding-block-end: var(--padding-bottom);
 
-      @media (min-width: $breakpoint-desktop) {
+      @media (min-width: var(--breakpoint-desktop)) {
         --fonts_size: 52px;
       }
     }
@@ -48,7 +48,7 @@
   }
 
   
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: var(--breakpoint-desktop)) {
     max-width: $element-child-section;
   }
 }
@@ -88,7 +88,7 @@
   p {
     max-width: 86px;
   
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: var(--breakpoint-desktop)) {
       max-width: inherit;
     }
   }

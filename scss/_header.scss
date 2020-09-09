@@ -21,7 +21,7 @@
     color: $white;
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: var(--breakpoint-desktop)) {
     --fonts_size: 40px;
   }
 }

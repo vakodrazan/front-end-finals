@@ -11,7 +11,7 @@
   display: none;
   padding-inline-end: 11px;
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: var(--breakpoint-desktop)) {
     display: block;
   }
 }
@@ -27,7 +27,7 @@
   display: block;
   margin-inline-end: -6rem;
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: var(--breakpoint-desktop)) {
     margin-inline-end: 0;
   }
 }
@@ -36,8 +36,8 @@
   padding-inline-end: 0;
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: var(--breakpoint-desktop)) {
   .section_image-slider__viewing img {
-    width: $breakpoint-desktop;
+    width: var(--breakpoint-desktop);
   }
 }
