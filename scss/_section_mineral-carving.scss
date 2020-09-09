@@ -1,8 +1,11 @@
 @import "variables";
 
 .section_mineral-carving {
-  padding-block-start: 92px;
-  padding-block-end: 105px;
+  --padding-top: 92px;
+  --padding-bottom: 105px;
+
+  padding-block-start: var(--padding-top);
+  padding-block-end: var(--padding-bottom);
 
   > .container {
     @include flex-column-reverse();
@@ -14,13 +17,15 @@
 }
 
 .section_mineral-carving__desc {
-  padding-block-start: 75px;
+  --padding-top: 75px;
+  padding-block-start: var(--padding-top);
 
   > header {
 
     > h3 {
       --fonts_size: 40px;
-      padding-block-end: 31px;
+      --padding-bottom: 31px;
+      padding-block-end: var(--padding-bottom);
 
       @media (min-width: $breakpoint-desktop) {
         --fonts_size: 52px;
@@ -29,20 +34,23 @@
 
     > p {
       --fonts_size: 18px;
+      --padding-bottom: 36px;
+
       font-size: var(--fonts_size);
-      padding-block-end: 2rem;
+      padding-block-end: var(--padding-bottom);
     }
   }
 
   > p {
+    --padding-bottom: 31px;
     color: $dark-gray;
-    padding-block-end: 31px;
+    padding-block-end: var(--padding-bottom);
   }
 
   
   @media (min-width: $breakpoint-desktop) {
     max-width: $element-child-section;
-   }
+  }
 }
 
 
@@ -62,14 +70,16 @@
 }
 
 .section_mineral-carving__info--date {
+  --padding-bottom: 40px;
   flex-basis: 50%;
-  padding-block-end: 40px;
+  padding-block-end: var(--padding-bottom);
 }
 
 
 .section_mineral-carving__info--location {
+  --padding-bottom: 40px;
   flex-basis: 50%;
-  padding-block-end: 40px;
+  padding-block-end: var(--padding-bottom);
 }
 
 .section_mineral-carving__info--camera {
