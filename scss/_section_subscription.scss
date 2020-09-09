@@ -49,8 +49,9 @@
     padding-block-end: $based_unit;
   
     > label {
+      --fonts_size: 12px;
       font-weight: bold;
-      font-size: 12px;
+      font-size: var(--fonts_size);
       text-transform: uppercase;
       padding-block-end: 12px;
     }
@@ -58,7 +59,7 @@
     > input {
       width: 346px;
       font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-      font-size: $based_unit;
+      font-size: var(--fonts_size);
       box-sizing: border-box;
       border: 1px solid $light-gray;
       line-height: 1.5;
@@ -81,7 +82,7 @@
     border-radius: $radius;
     background-color: $blue;
     font-weight: bold;
-    font-size: $based_unit;
+    font-size: var(--fonts_size);
     line-height: 1.5;
     text-align: center;
     padding-inline-start: 45px;

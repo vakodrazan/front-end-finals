@@ -348,14 +348,15 @@ body > [type="checkbox"]:checked ~ label {
   border: none;
   padding-block-end: 16px; }
   .section_subscription__form > fieldset > label {
+    --fonts_size: 12px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: var(--fonts_size);
     text-transform: uppercase;
     padding-block-end: 12px; }
   .section_subscription__form > fieldset > input {
     width: 346px;
     font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: var(--fonts_size);
     box-sizing: border-box;
     border: 1px solid #DADADA;
     line-height: 1.5;
@@ -375,7 +376,7 @@ body > [type="checkbox"]:checked ~ label {
   border-radius: 5px;
   background-color: #434CCC;
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--fonts_size);
   line-height: 1.5;
   text-align: center;
   padding-inline-start: 45px;
