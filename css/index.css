@@ -142,7 +142,7 @@ img {
 .menu {
   background-image: url("../images/icon_menu.svg");
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 24px 24px;
   background-position: 50% 50%;
   color: transparent; }
 
@@ -186,6 +186,11 @@ body > [type="checkbox"]:checked ~ label {
 
 .navigation__list {
   order: 1; }
+  .navigation__list > li {
+    padding-block-end: 2rem;
+    font-weight: 700; }
+    .navigation__list > li a {
+      color: rgba(0, 0, 0, 0.5); }
 
 .section_mineral-carving {
   padding-block-start: 92px;
