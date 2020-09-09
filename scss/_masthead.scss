@@ -1,7 +1,8 @@
 @import "variables";
 
 .masthead {
-  padding-block-start: 31px;
+  --padding-top: 31px;
+  padding-block-start: var(--padding-top);
 }
 
 .masthead__headings {
@@ -11,8 +12,11 @@
 
   > h2 {
     --fonts_size: 52px;
-    padding-block-start: 61px;
-    padding-block-end: 65px;
+    --padding-top: 61px;
+    --padding-bottom: 65px;
+
+    padding-block-start: var(--padding-top);
+    padding-block-end: var(--padding-bottom);
 
     @media (min-width: $breakpoint-desktop) {
       --fonts_size: 72px;
