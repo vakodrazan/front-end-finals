@@ -394,13 +394,13 @@ body > [type="checkbox"]:checked ~ label {
   max-width: 100px; }
 
 .social-media__icon > a {
+  text-indent: -999px;
+  overflow: hidden;
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
   width: 18px;
-  height: 16px;
-  text-indent: -999px;
-  overflow: hidden; }
+  height: 16px; }
 
 .social-media__icon--facebook {
   background-image: url("../images/icon_facebook.svg"); }

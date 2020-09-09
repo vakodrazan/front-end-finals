@@ -4,15 +4,13 @@
 }
 
 .social-media__icon {
-  // max-width: 100px;
   > a {
+    @include hide-text(); // if you hide the text by using text-indent, avoid the page from overflowing
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
     width: 18px;
-    height: 16px;
-    text-indent: -999px;
-    overflow: hidden;
+    height: $based_unit;
   }
 }
 
