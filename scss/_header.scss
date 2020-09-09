@@ -1,6 +1,7 @@
 @import "variables";
 
 .header {
+  --fonts_size: #{$heading1};
   background-color: $blue;
   > .container {
     @include flex-row();
@@ -13,9 +14,13 @@
 
 .header__heading {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: var(--fonts_size);
 
   > a {
     color: $white;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    --fonts_size: 40px;
   }
 }
