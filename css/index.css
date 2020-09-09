@@ -423,12 +423,15 @@ body > [type="checkbox"]:checked ~ label {
   background-image: url("../images/icon_instagram.svg"); }
 
 .footer {
+  --padding-top: 75px;
+  --padding-bottom: 28px;
   background-color: #fff;
-  padding-block-start: 75px;
-  padding-block-end: 28px; }
+  padding-block-start: var(--padding-top);
+  padding-block-end: var(--padding-top); }
 
 .footer__info {
-  padding-block-end: 72px; }
+  --padding-bottom: 75px;
+  padding-block-end: var(--padding-bottom); }
   @media (min-width: 1440px) {
     .footer__info {
       display: flex;
@@ -438,7 +441,8 @@ body > [type="checkbox"]:checked ~ label {
       align-items: flex-start; } }
 
 .footer__info__about {
-  padding-block-end: 78px; }
+  --padding-bottom: 78px;
+  padding-block-end: var(--padding-bottom); }
   .footer__info__about > span {
     --fonts_size: 24px;
     font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
@@ -447,18 +451,22 @@ body > [type="checkbox"]:checked ~ label {
     .footer__info__about > span > a {
       color: #000; }
   .footer__info__about > p {
+    --padding-top: 23px;
+    --padding-bottom: 38px;
     color: rgba(0, 0, 0, 0.5);
-    padding-block-start: 23px;
-    padding-block-end: 38px; }
+    padding-block-start: var(--padding-top);
+    padding-block-end: var(--padding-bottom); }
   @media (min-width: 1440px) {
     .footer__info__about {
       max-width: 270px;
       padding-block-end: 0; } }
 
 .footer__info__pagination__list {
-  padding-block-end: 77px; }
+  --padding-bottom: 77px;
+  padding-block-end: var(--padding-bottom); }
   .footer__info__pagination__list > li {
-    padding-block-end: 8px; }
+    --padding-bottom:8px;
+    padding-block-end: 77 px; }
     .footer__info__pagination__list > li a {
       color: rgba(0, 0, 0, 0.5); }
 
@@ -481,11 +489,13 @@ li.footer__info__pagination__list--homepage a {
       font-size: 12px; }
 
 .footer__info__author__item:not(:last-of-type) {
-  padding-block-end: 27px; }
+  --padding-bottom: 27px;
+  padding-block-end: var(--padding-bottom); }
 
 .footer__status {
+  --padding-bottom: 27px;
   color: rgba(0, 0, 0, 0.5);
-  padding-block-start: 27px;
+  padding-block-start: var(--padding-bottom);
   position: relative; }
   .footer__status > p span {
     text-transform: uppercase; }
