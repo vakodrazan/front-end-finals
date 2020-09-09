@@ -12,7 +12,7 @@
   --padding-bottom: 75px;
   padding-block-end: var(--padding-bottom);
 
-  @media (min-width: var(--breakpoint-desktop)) {
+  @media (min-width: $breakpoint-desktop) {
     @include flex-row();
     align-items: flex-start; // if we use align items center, everyting will be in the center but to align at the beginning
   }
@@ -42,7 +42,7 @@
     padding-block-end: var(--padding-bottom);
   }
 
-  @media (min-width: var(--breakpoint-desktop)) {
+  @media (min-width: $breakpoint-desktop) {
     max-width: 270px;
     padding-block-end: 0;
   }
@@ -108,7 +108,7 @@ li.footer__info__pagination__list--homepage a {
     text-transform: uppercase;
   }
 
-  @media (min-width: var(--breakpoint-desktop)) {
+  @media (min-width: $breakpoint-desktop) {
     @include flex-row();
   }
 
