@@ -6,8 +6,8 @@
     @include flex-row();
     padding-inline-start: 14px;
     padding-inline-end: 0;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-block-start: $based_unit;
+    padding-block-end: $based_unit;
   }
 }
 
