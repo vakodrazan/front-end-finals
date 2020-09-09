@@ -1,17 +1,23 @@
 @import "variables";
 
 .section_subscription {
+  --padding-top: 63px;
+  --padding-bottom: 54px;
+
   background-color: $light-yellow;
-  padding-block-start: 63px;
-  padding-block-end: 54px;
+  padding-block-start: var(--padding-top);
+  padding-block-end: var(--padding-bottom);
 
   @media (min-width: $breakpoint-desktop) {
     .container {
       @include flex-row();
     }
 
-    padding-block-start: 120px;
-    padding-block-end: 104px;
+    --padding-top: 63px;
+    --padding-bottom: 54px;
+
+    padding-block-start: var(--padding-top);
+    padding-block-end: var(--padding-bottom);
   
   }
 }
@@ -20,10 +26,13 @@
   @include flex-column-reverse();
 
   > h3 {
+    --padding-top: 19px;
+    --padding-bottom: 44px;
+
     --fonts_size: 43px;
     line-height: 1.3;
-    padding-block-start: 19px;
-    padding-block-end: 44px;
+    padding-block-start: var(--padding-top);
+    padding-block-end: var(--padding-bottom);
 
     @media (min-width: $breakpoint-desktop) {
       --fonts_size: 52px;
@@ -41,41 +50,53 @@
 }
 
 .section_subscription__form {
+    --padding-top: #{$padding-top};
+    --padding-bottom: #{$padding-bottom};
+
 
   > fieldset {
+    --padding-bottom: #{$based_unit};
+
     @include flex-row();
     @include reset-list();
     border: none;
-    padding-block-end: $based_unit;
+    padding-block-end: var(--padding-bottom);
   
     > label {
       --fonts_size: 12px;
+      --padding-bottom: 12px;
+
       font-weight: bold;
       font-size: var(--fonts_size);
       text-transform: uppercase;
-      padding-block-end: 12px;
+      padding-block-end: var(--padding-bottom);
     }
   
     > input {
+      --padding-right: #{$based_unit};
+
       width: 346px;
       font-family: 'DM Sans', Arial, Helvetica, sans-serif;
       font-size: var(--fonts_size);
       box-sizing: border-box;
       border: 1px solid $light-gray;
       line-height: 1.5;
-      padding-inline-start: $based_unit;
+      padding-inline-start: var(--padding-right);
       border-radius: $radius;
-      padding-block-start: $padding-top;
-      padding-block-end: $padding-bottom;
+      padding-block-start: var(--padding-top);
+      padding-block-end: var(--padding-bottom);
     }
 
     @media (min-width: $breakpoint-desktop) {
+      --padding-right: 54px;
+
       padding-block-end: 0;
-      padding-inline-end: 54px;
+      padding-inline-end: var(--padding-right);
     }
   }
 
   > button {
+
     font-family: 'DM Sans', Arial, Helvetica, sans-serif;
     color: $white;
     border: none;
@@ -85,10 +106,10 @@
     font-size: var(--fonts_size);
     line-height: 1.5;
     text-align: center;
-    padding-inline-start: 45px;
-    padding-inline-end: 45px;
-    padding-block-start: $padding-top;
-    padding-block-end: $padding-bottom;
+    padding-inline-start: var(--padding-left);
+    padding-inline-end: var(--padding-right);
+    padding-block-start: var(--padding-top);
+    padding-block-end: var(--padding-bottom);
   }
 
   > button:hover {
@@ -97,6 +118,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     @include flex-row();
-    align-items: flex-end;
+    align-items: flex-end; // align the element from the bottom because their aren't the same and it doesn't look good from the center
   }
 }
