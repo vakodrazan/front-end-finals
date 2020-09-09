@@ -3,11 +3,13 @@
 .header {
   background-color: $blue;
   > .container {
+    --padding-top: #{$based_unit};
+    --padding-bottom: #{$based_unit};
     @include flex-row();
     padding-inline-start: 14px;
     padding-inline-end: 0;
-    padding-block-start: $based_unit;
-    padding-block-end: $based_unit;
+    padding-block-start: --padding-top;
+    padding-block-end: --padding-bottom;
   }
 }
 
