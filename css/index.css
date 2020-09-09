@@ -106,39 +106,6 @@ img {
     .masthead__description {
       max-width: 585px; } }
 
-.masthead__gallery__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.masthead__gallery__list__image {
-  display: none;
-  padding-inline-end: 11px; }
-  @media (min-width: 1440px) {
-    .masthead__gallery__list__image {
-      display: block; } }
-
-.masthead__gallery__list__image--rock-carvings {
-  display: block; }
-
-.masthead__gallery__list__image--stairs {
-  display: block; }
-
-.masthead__gallery__list__image--ripples {
-  display: block;
-  margin-inline-end: -6rem; }
-  @media (min-width: 1440px) {
-    .masthead__gallery__list__image--ripples {
-      margin-inline-end: 0; } }
-
-.masthead__gallery__list__image:last-of-type {
-  padding-inline-end: 0; }
-
-@media (min-width: 1440px) {
-  .masthead__gallery__viewing img {
-    width: 1440px; } }
-
 .menu {
   background-image: url("../images/icon_menu.svg");
   background-repeat: no-repeat;
@@ -224,6 +191,42 @@ body > [type="checkbox"]:checked ~ label {
       justify-content: space-between;
       align-items: center;
       max-width: 324px; } }
+
+.section_image-slider__header {
+  display: none; }
+
+.section_image-slider__gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.section_image-slider__gallery__image {
+  display: none;
+  padding-inline-end: 11px; }
+  @media (min-width: 1440px) {
+    .section_image-slider__gallery__image {
+      display: block; } }
+
+.section_image-slider__gallery__image--rock-carvings {
+  display: block; }
+
+.section_image-slider__gallery__image--stairs {
+  display: block; }
+
+.section_image-slider__gallery__image--ripples {
+  display: block;
+  margin-inline-end: -6rem; }
+  @media (min-width: 1440px) {
+    .section_image-slider__gallery__image--ripples {
+      margin-inline-end: 0; } }
+
+.section_image-slider__gallery__image:last-of-type {
+  padding-inline-end: 0; }
+
+@media (min-width: 1440px) {
+  .section_image-slider__viewing img {
+    width: 1440px; } }
 
 .section_mineral-carving {
   padding-block-start: 92px;
