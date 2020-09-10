@@ -41,3 +41,8 @@
     width: $breakpoint-desktop;
   }
 }
+
+.section_image-slider__gallery img:hover {
+  border: 1px solid $dark-gray;
+  opacity: 0.5;
+}

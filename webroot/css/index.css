@@ -254,6 +254,10 @@ body > [type="checkbox"]:checked ~ label {
   .section_image-slider__viewing img {
     width: 1440px; } }
 
+.section_image-slider__gallery img:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  opacity: 0.5; }
+
 .section_mineral-carving {
   --padding-top: 92px;
   --padding-bottom: 105px;
