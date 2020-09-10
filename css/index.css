@@ -524,8 +524,9 @@ li.footer__pagination__list--homepage a {
   color: rgba(0, 0, 0, 0.5);
   position: relative; }
   .footer__status > .container {
-    --padding-bottom: 27px;
-    padding-block-start: var(--padding-bottom); }
+    --padding-top: 27px;
+    padding-block-start: var(--padding-bottom);
+    padding-block-end: 0; }
     .footer__status > .container > p span {
       text-transform: uppercase; }
     @media (min-width: 1440px) {
