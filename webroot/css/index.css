@@ -468,7 +468,8 @@ body > [type="checkbox"]:checked ~ label {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        align-items: flex-start; } }
+        align-items: flex-start;
+        padding-block-end: 0; } }
 
 .footer__about {
   --padding-bottom: 78px;
@@ -495,10 +496,12 @@ body > [type="checkbox"]:checked ~ label {
   --padding-bottom: 77px;
   padding-block-end: var(--padding-bottom); }
   .footer__pagination__list > li {
-    --padding-bottom:8px;
-    padding-block-end: 77 px; }
+    --padding-bottom: 15px;
+    padding-block-end: var(--padding-bottom); }
     .footer__pagination__list > li a {
       color: rgba(0, 0, 0, 0.5); }
+  .footer__pagination__list > li:last-of-type {
+    padding-block-end: 0; }
 
 li.footer__pagination__list--homepage a {
   font-weight: 700;
