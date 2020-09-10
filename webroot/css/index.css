@@ -234,6 +234,9 @@ body > [type="checkbox"]:checked ~ label {
     .section_image-slider__gallery__image {
       display: block; } }
 
+.section_image-slider__gallery__image img {
+  cursor: pointer; }
+
 .section_image-slider__gallery__image--rock-carvings {
   display: block; }
 
@@ -251,7 +254,7 @@ body > [type="checkbox"]:checked ~ label {
   padding-inline-end: 0; }
 
 @media (min-width: 1440px) {
-  .section_image-slider__viewing img {
+  .section_image-slider__viewing {
     width: 1440px; } }
 
 .section_image-slider__gallery img:hover {

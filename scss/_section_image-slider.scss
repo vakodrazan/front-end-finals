@@ -17,6 +17,10 @@
 }
 
 
+.section_image-slider__gallery__image img {
+  cursor: pointer;
+}
+
 .section_image-slider__gallery__image--rock-carvings {
   display: block;
 }
@@ -37,7 +41,7 @@
 }
 
 @media (min-width: $breakpoint-desktop) {
-  .section_image-slider__viewing img {
+  .section_image-slider__viewing {
     width: $breakpoint-desktop;
   }
 }
@@ -46,3 +50,4 @@
   border: 1px solid $dark-gray;
   opacity: 0.5;
 }
+
