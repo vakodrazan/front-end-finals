@@ -145,7 +145,7 @@ address {
 body > [type="checkbox"] {
   display: none; }
 
-body > [type="checkbox"]:checked ~ .navigation {
+body > [type="checkbox"]:checked ~ header .navigation {
   transform: translateX(0); }
 
 body > label {
@@ -170,7 +170,7 @@ body > [type="checkbox"]:checked ~ label {
   z-index: 2;
   opacity: 1; }
 
-body > .navigation {
+.header .navigation {
   --padding-top: 1rem;
   padding-block-start: var(--padding-top);
   padding-block-end: var(--padding-top);
@@ -187,18 +187,14 @@ body > .navigation {
   transform: translateX(-110%);
   transition: transform 0.3s; }
   @media (min-width: 1440px) {
-    body > .navigation {
+    .header .navigation {
+      position: initial;
       padding: 0;
       background-color: transparent;
-      top: 2.5rem;
-      left: 68%;
-      right: 0;
-      bottom: auto;
       box-shadow: none;
       transform: none;
       transition: none;
-      width: 324px;
-      margin-inline-end: calc((68% - 1440px) / 100%); } }
+      width: 324px; } }
 
 .navigation__list {
   order: 1; }

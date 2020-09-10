@@ -16,7 +16,7 @@ body > [type="checkbox"] {
   display: none;
 }
 
-body > [type="checkbox"]:checked ~ .navigation {
+body > [type="checkbox"]:checked ~ header .navigation {
   transform: translateX(0);
 }
 
@@ -48,7 +48,7 @@ body > [type="checkbox"]:checked ~ label {
 }
 
 
-body > .navigation {
+.header .navigation {
   --padding-top: 1rem;
 
   padding-block-start: var(--padding-top);
@@ -67,17 +67,13 @@ body > .navigation {
   transition: transform 0.3s;
 
   @media (min-width: $breakpoint-desktop) {
+    position: initial;
     padding: 0;
     background-color: transparent;
-    top: 2.5rem;
-    left: 68%;
-    right: 0;
-    bottom: auto;
     box-shadow: none;
     transform: none;
     transition: none;
     width: 324px;
-    margin-inline-end: calc((68% - 1440px) / 100%);
   }
 }
 
