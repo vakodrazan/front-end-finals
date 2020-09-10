@@ -22,7 +22,7 @@
   --padding-bottom: 11px;
   --padding-right: 45px;
   --padding-left: 45px;
-  --breakpoint-desktop: 1440px; }
+  --breakpoint_desktop: 1440px; }
 
 body {
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
@@ -67,11 +67,13 @@ address {
   font-style: normal; }
 
 .container {
-  padding-inline-start: 14px;
-  padding-inline-end: 15px; }
+  --padding-top: 14px;
+  --padding-bottom: 15px;
+  padding-inline-start: var(--padding-top);
+  padding-inline-end: var(--padding-bottom); }
   @media (min-width: 1440px) {
     .container {
-      max-width: 1440px;
+      max-width: var(--breakpoint_desktop);
       margin-left: auto;
       margin-right: auto;
       padding: 0; } }
