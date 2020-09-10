@@ -225,30 +225,25 @@ body > [type="checkbox"]:checked ~ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  overflow-x: scroll;
+  margin-inline-end: -2rem; }
+  @media (min-width: 1440px) {
+    .section_image-slider__gallery {
+      overflow-x: hidden;
+      margin-inline-end: 0; } }
 
 .section_image-slider__gallery__image {
-  display: none;
   padding-inline-end: 11px; }
-  @media (min-width: 1440px) {
-    .section_image-slider__gallery__image {
-      display: block; } }
+  .section_image-slider__gallery__image > picture img.sliderImage {
+    display: block;
+    max-width: 137px; }
+    @media (min-width: 1440px) {
+      .section_image-slider__gallery__image > picture img.sliderImage {
+        max-width: 100%; } }
 
 .section_image-slider__gallery__image img {
   cursor: pointer; }
-
-.section_image-slider__gallery__image--rock-carvings {
-  display: block; }
-
-.section_image-slider__gallery__image--stairs {
-  display: block; }
-
-.section_image-slider__gallery__image--ripples {
-  display: block;
-  margin-inline-end: -6rem; }
-  @media (min-width: 1440px) {
-    .section_image-slider__gallery__image--ripples {
-      margin-inline-end: 0; } }
 
 .section_image-slider__gallery__image:last-of-type {
   padding-inline-end: 0; }
@@ -257,9 +252,15 @@ body > [type="checkbox"]:checked ~ label {
   .section_image-slider__viewing {
     width: 1440px; } }
 
+.section_image-slider__gallery img {
+  opacity: 0.5; }
+
 .section_image-slider__gallery img:hover {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  opacity: 0.5; }
+  opacity: 1; }
+
+.sliderImage.open {
+  opacity: 1; }
 
 .section_mineral-carving {
   --padding-top: 92px;
