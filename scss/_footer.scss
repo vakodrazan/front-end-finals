@@ -104,8 +104,9 @@ li.footer__pagination__list--homepage a {
   position: relative;
   
   > .container {
-    --padding-bottom: 27px;
+    --padding-top: 27px;
     padding-block-start: var(--padding-bottom);
+    padding-block-end: 0;
     > p span {
       text-transform: uppercase;
     }
