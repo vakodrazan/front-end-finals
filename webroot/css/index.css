@@ -249,7 +249,7 @@ body > [type="checkbox"]:checked ~ label {
   padding-inline-end: 0; }
 
 @media (min-width: 1440px) {
-  .section_image-slider__viewing {
+  .slider img {
     width: 1440px; } }
 
 .section_image-slider__gallery img {
