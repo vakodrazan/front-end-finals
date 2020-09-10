@@ -73,7 +73,8 @@ address {
     .container {
       max-width: 1440px;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      padding: 0; } }
 
 .header {
   background-color: #434CCC; }
