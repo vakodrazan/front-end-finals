@@ -6,19 +6,21 @@
   background-color: $white;
   padding-block-start: var(--padding-top);
   padding-block-end: var(--padding-top);
-}
 
-.footer__info {
-  --padding-bottom: 75px;
-  padding-block-end: var(--padding-bottom);
+  
+  .container {
+    --padding-bottom: 75px;
+    padding-block-end: var(--padding-bottom);
 
-  @media (min-width: $breakpoint-desktop) {
-    @include flex-row();
-    align-items: flex-start; // if we use align items center, everyting will be in the center but to align at the beginning
+    @media (min-width: $breakpoint-desktop) {
+      @include flex-row();
+      align-items: flex-start; // if we use align items center, everyting will be in the center but to align at the beginning
+    }
   }
 }
 
-.footer__info__about {
+
+.footer__about {
   --padding-bottom: 78px;
   padding-block-end: var(--padding-bottom);
 
@@ -48,7 +50,7 @@
   }
 }
 
-.footer__info__pagination__list {
+.footer__pagination__list {
   --padding-bottom: 77px;
 
   padding-block-end: var(--padding-bottom);
@@ -64,12 +66,12 @@
   }
 }
 
-li.footer__info__pagination__list--homepage a {
+li.footer__pagination__list--homepage a {
   font-weight: 700;
   color: $black;
 }
 
-.footer__info__author__item {
+.footer__author__item {
   display: flex;
   flex-direction: row;
 
@@ -92,7 +94,7 @@ li.footer__info__pagination__list--homepage a {
   }
 }
 
-.footer__info__author__item:not(:last-of-type) {
+.footer__author__item:not(:last-of-type) {
   --padding-bottom: 27px;
   padding-block-end: var(--padding-bottom);
 }
