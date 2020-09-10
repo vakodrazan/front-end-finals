@@ -65,60 +65,67 @@
           <header class="section_image-slider__header">
             <h3>Image slider</h3>
           </header>
-          <picture class="section_image-slider__viewing">
-            <source srcset="./images/rock_carvings_lg.jpg" media="(min-width: 346px)">
-            <img src="./images/rock_carvings_lg.jpg" alt="You are on the rock carving page">
-          </picture>
-          <ul class="section_image-slider__gallery">
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--rock-carvings">
-              <picture>
-                <source srcset="./images/rock_carvings_md.jpg" media="(min-width: 137px)">
-                <img src="./images/rock_carvings_md.jpg" alt="This is a picture of the rock carvings">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--stairs">
-              <picture>
-                <source srcset="./images/stairs_md.jpg" media="(min-width: 137px)">
-                <img src="./images/stairs_md.jpg" alt="This is a picture of the stairs">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--ripples">
-              <picture>
-                <source srcset="./images/ripples_md.jpg" media="(min-width: 137px)">
-                <img src="./images/ripples_md.jpg" alt="This is a picture of ripples">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--dunes">
-              <picture>
-                <source srcset="./images/dunes_md.jpg" media="(min-width: 137px)">
-                <img src="./images/dunes_md.jpg" alt="This is a picture of the dunes">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--arches">
-              <picture>
-                <source srcset="./images/arches_md.jpg" media="(min-width: 137px)">
-                <img src="./images/arches_md.jpg" alt="This is a picture of the arches">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--car">
-              <picture>
-                <source srcset="./images/car_md.jpg" media="(min-width: 137px)">
-                <img src="./images/car_md.jpg" alt="This is a picture of a car">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--sunset">
-              <picture>
-                <source srcset="./images/sunset_md.jpg" media="(min-width: 137px)">
-                <img src="./images/sunset_md.jpg" alt="This is the picture of the beautiful sunset">
-              </picture>
-            </li>
-            <li class="section_image-slider__gallery__image section_image-slider__gallery__image--canyon">
-              <picture>
-                <source srcset="./images/canyon_md.jpg" media="(min-width: 137px)">
-                <img src="./images/canyon_md.jpg" alt="This is the picture of the canyon">
-              </picture>
-            </li>
-          </ul>
+          <div>
+            <img class="section_image-slider__viewing" src="./images/rock_carvings_md.jpg" alt="This is a picture of the rock carvings">
+            <img class="section_image-slider__viewing" src="./images/stairs_md.jpg" alt="This is a picture of the stairs" style="display: none;">
+            <img class="section_image-slider__viewing" src="./images/ripples_md.jpg" alt="This is a picture of ripples" style="display: none;">
+            <img class="section_image-slider__viewing" src="./images/dunes_md.jpg" alt="This is a picture of the dunes" style="display: none;">
+            <img class="section_image-slider__viewing" src="./images/arches_md.jpg" alt="This is a picture of the arches" style="display: none;">
+            <img class="section_image-slider__viewing" src="./images/car_md.jpg" alt="This is a picture of a car" style="display: none;">
+            <img class="section_image-slider__viewing" src="./images/sunset_md.jpg" alt="This is the picture of the beautiful sunset" style="display: none;">
+            <img class="section_image-slider__viewing" src="./images/canyon_md.jpg" alt="This is the picture of the canyon" style="display: none;">
+
+            <ul class="section_image-slider__gallery">
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--rock-carvings">
+                <picture>
+                  <source srcset="./images/rock_carvings_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/rock_carvings_md.jpg" alt="This is a picture of the rock carvings" onclick="currentDiv(1)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--stairs">
+                <picture>
+                  <source srcset="./images/stairs_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/stairs_md.jpg" alt="This is a picture of the stairs" onclick="currentDiv(2)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--ripples">
+                <picture>
+                  <source srcset="./images/ripples_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/ripples_md.jpg" alt="This is a picture of ripples" onclick="currentDiv(3)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--dunes">
+                <picture>
+                  <source srcset="./images/dunes_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/dunes_md.jpg" alt="This is a picture of the dunes" onclick="currentDiv(4)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--arches">
+                <picture>
+                  <source srcset="./images/arches_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/arches_md.jpg" alt="This is a picture of the arches" onclick="currentDiv(5)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--car">
+                <picture>
+                  <source srcset="./images/car_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/car_md.jpg" alt="This is a picture of a car" onclick="currentDiv(6)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--sunset">
+                <picture>
+                  <source srcset="./images/sunset_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/sunset_md.jpg" alt="This is the picture of the beautiful sunset" onclick="currentDiv(7)">
+                </picture>
+              </li>
+              <li class="section_image-slider__gallery__image section_image-slider__gallery__image--canyon">
+                <picture>
+                  <source srcset="./images/canyon_md.jpg" media="(min-width: 137px)">
+                  <img src="./images/canyon_md.jpg" alt="This is the picture of the canyon" onclick="currentDiv(8)">
+                </picture>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
