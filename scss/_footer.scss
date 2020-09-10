@@ -98,22 +98,23 @@ li.footer__info__pagination__list--homepage a {
 }
 
 .footer__status {
-  --padding-bottom: 27px;
   color: $dark-gray;
-  padding-block-start: var(--padding-bottom);
   position: relative;
   
+  > .container {
+    --padding-bottom: 27px;
+    padding-block-start: var(--padding-bottom);
+    > p span {
+      text-transform: uppercase;
+    }
 
-  > p span {
-    text-transform: uppercase;
-  }
+    @media (min-width: $breakpoint-desktop) {
+      @include flex-row();
+    }
 
-  @media (min-width: $breakpoint-desktop) {
-    @include flex-row();
-  }
-
-  > address a {
-    color: $dark-gray;
+    > address a {
+      color: $dark-gray;
+    }
   }
 }
 
@@ -121,7 +122,7 @@ li.footer__info__pagination__list--homepage a {
   content: "";
   position: absolute;
   top: 0;
-  left: -2rem;
+  left: 0;
   right: 0;
   border-top: 2px solid rgba(0, 0, 0, .1);
   width: 100vw;
