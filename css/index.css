@@ -145,37 +145,6 @@ address {
 body > [type="checkbox"] {
   display: none; }
 
-body > .navigation {
-  --padding-top: 1rem;
-  padding-block-start: var(--padding-top);
-  padding-block-end: var(--padding-top);
-  padding-inline-start: var(--padding-top);
-  padding-inline-end: var(--padding-top);
-  background-color: #f8f8f8;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 250px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translateX(-110%);
-  transition: transform 0.3s; }
-  @media (min-width: 1440px) {
-    body > .navigation {
-      padding-inline-start: 0;
-      padding-inline-end: 0;
-      background-color: transparent;
-      top: 0;
-      left: 67%;
-      right: 0;
-      bottom: auto;
-      box-shadow: none;
-      transform: none;
-      transition: none;
-      width: 324px;
-      margin-inline-end: auto; } }
-
 body > [type="checkbox"]:checked ~ .navigation {
   transform: translateX(0); }
 
@@ -201,6 +170,36 @@ body > [type="checkbox"]:checked ~ label {
   z-index: 2;
   opacity: 1; }
 
+body > .navigation {
+  --padding-top: 1rem;
+  padding-block-start: var(--padding-top);
+  padding-block-end: var(--padding-top);
+  padding-inline-start: var(--padding-top);
+  padding-inline-end: var(--padding-top);
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s; }
+  @media (min-width: 1440px) {
+    body > .navigation {
+      padding: 0;
+      background-color: transparent;
+      top: 2.5rem;
+      left: 68%;
+      right: 0;
+      bottom: auto;
+      box-shadow: none;
+      transform: none;
+      transition: none;
+      width: 324px;
+      margin-inline-end: calc((68% - 1440px) / 100%); } }
+
 .navigation__list {
   order: 1; }
   .navigation__list > li {
@@ -212,6 +211,9 @@ body > [type="checkbox"]:checked ~ label {
       @media (min-width: 1440px) {
         .navigation__list > li a {
           color: #fff; } }
+    @media (min-width: 1440px) {
+      .navigation__list > li {
+        padding-block-end: 0; } }
   @media (min-width: 1440px) {
     .navigation__list {
       display: flex;
