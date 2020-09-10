@@ -36,11 +36,13 @@
   padding-inline-end: 0;
 }
 
-@media (min-width: $breakpoint-desktop) {
-  .slider img {
+.slider img {
+  @media (min-width: $breakpoint-desktop) {
     width: $breakpoint-desktop;
   }
 }
+
+
 
 .section_image-slider__gallery img {
   opacity: 0.5;
@@ -50,6 +52,7 @@
   border: 1px solid $dark-gray;
   opacity: 1;
 }
+
 
 .sliderImage.open {
   opacity: 1;
