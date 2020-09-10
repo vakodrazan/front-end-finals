@@ -4,8 +4,8 @@
   --padding-right: 14px;
   --padding-left: 15px;
 
-  padding-inline-start: var(--padding-top);
-  padding-inline-end: var(--padding-bottom);
+  padding-inline-start: var(--padding-right);
+  padding-inline-end: var(--padding-left);
 
     @media (min-width: $breakpoint-desktop) {
       max-width: var(--breakpoint_desktop);
