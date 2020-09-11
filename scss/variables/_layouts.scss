@@ -20,3 +20,9 @@
   flex-direction: column-reverse;
   justify-content: space-between;
 }
+@mixin flex-column {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+}
