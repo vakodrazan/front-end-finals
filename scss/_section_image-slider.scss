@@ -7,12 +7,20 @@
   @include flex-row();
   overflow-x: scroll;
   margin-right: -2rem;
+  scrollbar-width: none; /* To hide the scroll bar for Firefox */
+  -ms-overflow-style: none; /* To hide the scroll bar for Internet Explorer 11 */
 
   @media (min-width: $breakpoint-desktop) {
     overflow-x: hidden;
     margin-right: 0;
   }
 }
+
+// To hide the scroll bar for all the webkit browser
+.section_image-slider__gallery::-webkit-scrollbar {
+  display: none;
+}
+
 
 .section_image-slider__gallery__image {
   padding-right: 11px;
