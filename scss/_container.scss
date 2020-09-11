@@ -7,10 +7,10 @@
   padding-left: var(--padding-left);
   padding-right: var(--padding-right);
 
-    @media (min-width: $breakpoint-desktop) {
-      max-width: var(--breakpoint_desktop);
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0;
-    }
+  @media (min-width: $breakpoint-desktop) {
+    max-width: var(--breakpoint_desktop);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 }
