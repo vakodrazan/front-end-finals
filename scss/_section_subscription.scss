@@ -13,11 +13,8 @@
       @include flex-row();
     }
 
-    --padding-top: 63px;
-    --padding-bottom: 54px;
-
-    padding-top: var(--padding-top);
-    padding-bottom: var(--padding-bottom);
+    --padding-top: 76px;
+    --padding-bottom: 72px;
   
   }
 }
