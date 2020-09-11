@@ -88,10 +88,11 @@
   flex-basis: 50%;
 
   p {
+    --elem_width: 86px;
     max-width: 86px;
   
     @media (min-width: $breakpoint-desktop) {
-      max-width: inherit;
+      --elem_width: inherit;
     }
   }
 }
