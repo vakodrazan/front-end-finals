@@ -57,7 +57,7 @@
   > fieldset {
     --padding-bottom: #{$based_unit};
 
-    @include flex-row();
+    @include flex-column();
     @include reset-list();
     border: none;
     padding-bottom: var(--padding-bottom);
