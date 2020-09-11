@@ -459,20 +459,22 @@ body > [type="checkbox"]:checked ~ label {
       align-items: flex-end; } }
 
 .social-media {
+  --elem_width: 100px;
   display: flex;
   display: -ms-flexbox;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 100px; }
+  max-width: var(--elem_width); }
 
 .social-media__icon > a {
+  --elem_width: 18px;
   text-indent: -999px;
   overflow: hidden;
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 18px;
+  width: var(--elem_width);
   height: 16px; }
 
 .social-media__icon--facebook {
