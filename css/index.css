@@ -231,11 +231,18 @@ body > [type="checkbox"]:checked ~ label {
   justify-content: space-between;
   align-items: center;
   overflow-x: scroll;
-  margin-right: -2rem; }
+  margin-right: -2rem;
+  scrollbar-width: none;
+  /* To hide the scroll bar for Firefox */
+  -ms-overflow-style: none;
+  /* To hide the scroll bar for Internet Explorer 11 */ }
   @media (min-width: 1440px) {
     .section_image-slider__gallery {
       overflow-x: hidden;
       margin-right: 0; } }
+
+.section_image-slider__gallery::-webkit-scrollbar {
+  display: none; }
 
 .section_image-slider__gallery__image {
   padding-right: 11px; }
