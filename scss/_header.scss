@@ -7,9 +7,9 @@
     --padding-bottom: #{$based_unit};
     --padding-right: 14px;
     @include flex-row();
-    padding-inline-end: 0;
-    padding-block-start: var(--padding-top);
-    padding-block-end: var(--padding-bottom);
+    padding-right: 0;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
   }
 }
 

@@ -6,16 +6,16 @@
 .section_image-slider__gallery {
   @include flex-row();
   overflow-x: scroll;
-  margin-inline-end: -2rem;
+  margin-right: -2rem;
 
   @media (min-width: $breakpoint-desktop) {
     overflow-x: hidden;
-    margin-inline-end: 0;
+    margin-right: 0;
   }
 }
 
 .section_image-slider__gallery__image {
-  padding-inline-end: 11px;
+  padding-right: 11px;
 
   > picture img.sliderImage {
     display: block;
@@ -33,7 +33,7 @@
 }
 
 .section_image-slider__gallery__image:last-of-type {
-  padding-inline-end: 0;
+  padding-right: 0;
 }
 
 .imageViewing {

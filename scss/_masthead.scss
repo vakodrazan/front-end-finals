@@ -2,7 +2,7 @@
 
 .masthead {
   --padding-top: 31px;
-  padding-block-start: var(--padding-top);
+  padding-top: var(--padding-top);
 }
 
 .masthead__headings {
@@ -15,8 +15,8 @@
     --padding-top: 61px;
     --padding-bottom: 65px;
 
-    padding-block-start: var(--padding-top);
-    padding-block-end: var(--padding-bottom);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
 
     @media (min-width: $breakpoint-desktop) {
       --fonts_size: 72px;
@@ -35,7 +35,7 @@
 .masthead__description {
   font-size: 18px;
   line-height: 1.9;
-  padding-block-end: 82px;
+  padding-bottom: 82px;
 
   @media (min-width: $breakpoint-desktop) {
     max-width: $masthead_width;

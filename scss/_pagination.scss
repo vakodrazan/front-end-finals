@@ -51,10 +51,10 @@ body > [type="checkbox"]:checked ~ label {
 .header .navigation {
   --padding-top: 1rem;
 
-  padding-block-start: var(--padding-top);
-  padding-block-end: var(--padding-top);
-  padding-inline-start: var(--padding-top);
-  padding-inline-end: var(--padding-top);
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-top);
+  padding-left: var(--padding-top);
+  padding-right: var(--padding-top);
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
@@ -84,7 +84,7 @@ body > [type="checkbox"]:checked ~ label {
   > li {
     --padding-bottom: 2rem;
 
-    padding-block-end: var(--padding-bottom);
+    padding-bottom: var(--padding-bottom);
     font-weight: 700;
 
     a {
@@ -95,7 +95,7 @@ body > [type="checkbox"]:checked ~ label {
       }
     }
     @media (min-width: $breakpoint-desktop) {
-      padding-block-end: 0;
+      padding-bottom: 0;
     }
   }
 

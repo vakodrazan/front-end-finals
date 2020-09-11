@@ -1,11 +1,11 @@
 @import "variables";
 
 .container {
-  --padding-right: 14px;
-  --padding-left: 15px;
+  --padding-left: 14px;
+  --padding-right: 15px;
 
-  padding-inline-start: var(--padding-right);
-  padding-inline-end: var(--padding-left);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
 
     @media (min-width: $breakpoint-desktop) {
       max-width: var(--breakpoint_desktop);
