@@ -1,5 +1,6 @@
 @mixin flex-row {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +8,7 @@
 
 @mixin flex-row-reverse {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +16,7 @@
 
 @mixin flex-column-reverse {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column-reverse;
   justify-content: space-between;
 }
