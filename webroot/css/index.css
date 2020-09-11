@@ -262,10 +262,8 @@ body > [type="checkbox"]:checked ~ label {
   padding-right: 0; }
 
 .imageViewing {
-  opacity: 1; }
-  @media (min-width: 1440px) {
-    .imageViewing {
-      width: 1440px; } }
+  opacity: 1;
+  width: 1440px; }
 
 .section_image-slider__gallery img {
   opacity: 0.5; }
