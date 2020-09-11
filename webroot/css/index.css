@@ -150,7 +150,7 @@ body > [type="checkbox"] {
   display: none; }
 
 body > [type="checkbox"]:checked ~ header .navigation {
-  transform: translateX(0); }
+  transform: translateY(0); }
 
 body > label {
   position: absolute;
@@ -188,8 +188,8 @@ body > [type="checkbox"]:checked ~ label {
   bottom: 0;
   width: 250px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translateX(-110%);
-  transition: transform 0.3s; }
+  transform: translateY(-110%);
+  transition: transform 0.2s; }
   @media (min-width: 1440px) {
     .header .navigation {
       position: initial;
@@ -275,9 +275,6 @@ body > [type="checkbox"]:checked ~ label {
   opacity: 1; }
 
 .sliderImage.open {
-  opacity: 1; }
-
-.sliderImage:focus-within {
   opacity: 1; }
 
 .section_mineral-carving {

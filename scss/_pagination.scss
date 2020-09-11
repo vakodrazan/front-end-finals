@@ -12,15 +12,17 @@
   }
 }
 
+// hide the checkbox
 body > [type="checkbox"] {
   display: none;
 }
 
+// when the user check the checkbox by clicking the menu icon, the menu will show
 body > [type="checkbox"]:checked ~ header .navigation {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
-
+// because there is a close label in the body, that need to be hidden away
 body > label {
   position: absolute;
   z-index: -1;
@@ -38,9 +40,10 @@ body > label {
   }
 }
 
+// when the menu icon is clicked make the main clickable, to close the menu
 body > [type="checkbox"]:checked ~ main {
   z-index: 1;
-}
+} 
 
 body > [type="checkbox"]:checked ~ label {
   z-index: 2;
@@ -63,8 +66,8 @@ body > [type="checkbox"]:checked ~ label {
   bottom: 0;
   width: 250px;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
-  transform: translateX(-110%);
-  transition: transform 0.3s;
+  transform: translateY(-110%);
+  transition: transform 0.2s;
 
   @media (min-width: $breakpoint-desktop) {
     position: initial;
