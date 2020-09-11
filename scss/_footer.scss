@@ -46,7 +46,8 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    max-width: 270px;
+    --elem_width: 270px;
+    max-width: var(--elem_width);
     padding-bottom: 0;
   }
 }
