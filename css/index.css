@@ -361,10 +361,8 @@ body > [type="checkbox"]:checked ~ label {
   padding-bottom: var(--padding-bottom); }
   @media (min-width: 1440px) {
     .section_subscription {
-      --padding-top: 63px;
-      --padding-bottom: 54px;
-      padding-top: var(--padding-top);
-      padding-bottom: var(--padding-bottom); }
+      --padding-top: 76px;
+      --padding-bottom: 72px; }
       .section_subscription .container {
         display: flex;
         display: -ms-flexbox;
