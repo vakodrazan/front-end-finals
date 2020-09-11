@@ -250,11 +250,12 @@ body > [type="checkbox"]:checked ~ label {
 .section_image-slider__gallery__image {
   padding-right: 11px; }
   .section_image-slider__gallery__image > picture img.sliderImage {
+    --elem_width: 137px;
     display: block;
-    max-width: 137px; }
+    max-width: var(--elem_width); }
     @media (min-width: 1440px) {
       .section_image-slider__gallery__image > picture img.sliderImage {
-        max-width: 100%; } }
+        --elem_width: 100%; } }
 
 .section_image-slider__gallery__image img {
   cursor: pointer; }

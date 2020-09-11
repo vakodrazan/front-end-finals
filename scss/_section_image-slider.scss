@@ -26,11 +26,12 @@
   padding-right: 11px;
 
   > picture img.sliderImage {
+    --elem_width: 137px;
     display: block;
-    max-width: 137px;
+    max-width: var(--elem_width);
 
     @media (min-width: $breakpoint-desktop) {
-      max-width: 100%;
+      --elem_width: 100%;
     }
   }
   
