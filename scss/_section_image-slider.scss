@@ -11,7 +11,7 @@
   -ms-overflow-style: none; /* To hide the scroll bar for Internet Explorer 11 */
 
   @media (min-width: $breakpoint-desktop) {
-    overflow-x: hidden;
+    overflow-x: hidden; // hide the overflowing in case it will break the design
     margin-right: 0;
   }
 }
@@ -47,7 +47,7 @@
 .imageViewing {
   opacity: 1;
   @media (min-width: $breakpoint-desktop) {
-    width: $breakpoint-desktop;
+    width: $breakpoint-desktop; // to make the image as big as the breakpoint, we need to set an unit value width
   }
 }
 
@@ -64,10 +64,5 @@
 
 
 .sliderImage.open {
-  opacity: 1;
-}
-
-
-.sliderImage:focus-within {
   opacity: 1;
 }
