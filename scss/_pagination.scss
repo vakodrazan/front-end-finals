@@ -71,13 +71,13 @@ body > [type="checkbox"]:checked ~ label {
   transition: transform 0.2s;
 
   @media (min-width: $breakpoint-desktop) {
+    --elem_width: 324px;
     position: initial;
     padding: 0;
     background-color: transparent;
     box-shadow: none;
     transform: none;
     transition: none;
-    width: var(--elem_width);
   }
 }
 
