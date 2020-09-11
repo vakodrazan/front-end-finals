@@ -218,13 +218,11 @@ body > [type="checkbox"]:checked ~ label {
         padding-bottom: 0; } }
   @media (min-width: 1440px) {
     .navigation__list {
-      --elem_width: 324px;
       display: flex;
       display: -ms-flexbox;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-      max-width: var(--elem_width); } }
+      align-items: center; } }
 
 .section_image-slider__header {
   display: none; }
