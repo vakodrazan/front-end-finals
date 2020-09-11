@@ -392,7 +392,8 @@ body > [type="checkbox"]:checked ~ label {
     letter-spacing: 4.8px; }
   @media (min-width: 1440px) {
     .section_subscription__header {
-      max-width: 382px; } }
+      --elem_width: 382px;
+      max-width: var(--elem_width); } }
 
 .section_subscription__form {
   --padding-top: 13px;
