@@ -1,15 +1,17 @@
 .social-media {
+  --elem_width: 100px;
   @include flex-row();
-  max-width: 100px;
+  max-width: var(--elem_width);
 }
 
 .social-media__icon {
   > a {
+    --elem_width: 18px;
     @include hide-text(); // if you hide the text by using text-indent, avoid the page from overflowing
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 18px;
+    width: var(--elem_width);
     height: $based_unit;
   }
 }
