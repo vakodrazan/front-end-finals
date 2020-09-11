@@ -12,6 +12,7 @@
 
     @media (min-width: $breakpoint-desktop) {
       @include flex-row-reverse();
+      align-items: flex-start;
     }
   }
 }
@@ -50,6 +51,7 @@
   
   @media (min-width: $breakpoint-desktop) {
     max-width: $element-child-section;
+    padding-top: 0;
   }
 }
 

@@ -287,7 +287,8 @@ body > [type="checkbox"]:checked ~ label {
         display: -ms-flexbox;
         flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: center; } }
+        align-items: center;
+        align-items: flex-start; } }
 
 .section_mineral-carving__desc {
   --padding-top: 75px;
@@ -310,7 +311,8 @@ body > [type="checkbox"]:checked ~ label {
     padding-bottom: var(--padding-bottom); }
   @media (min-width: 1440px) {
     .section_mineral-carving__desc {
-      max-width: 570px; } }
+      max-width: 570px;
+      padding-top: 0; } }
 
 .section_mineral-carving__info {
   display: flex;
