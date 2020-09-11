@@ -76,6 +76,8 @@ address {
       max-width: var(--breakpoint_desktop);
       margin-left: auto;
       margin-right: auto;
+      -ms-margin-left: auto;
+      -ms-margin-right: auto;
       padding: 0; } }
 
 .header {
