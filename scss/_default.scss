@@ -14,14 +14,15 @@ body {
   font-size: var(--fonts_size);
   line-height: 1.5;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; // avoid overflowing the website
   background-color: $grey;
 }
 
 ul {
-  @include reset-list();
+  @include reset-list(); // remove the default style for the list element
 }
 
+// paragraph and figure always have margin by default, that need to remove because it breaks the style we've been added
 p,
 figure {
   margin: 0;
@@ -37,7 +38,7 @@ h6 {
   font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: var(--fonts_size);
+  font-size: var(--fonts_size);  // we once set the font property by default, we don't need to repeat it again but just update the value for all the headings
 }
 
 a {
@@ -53,6 +54,7 @@ img {
   border-radius: $radius;
 }
 
+// By default, the font style for address element is italic, so we need to change it if we do not need it
 address {
   font-style: normal;
 }
