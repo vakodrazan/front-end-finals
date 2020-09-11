@@ -523,7 +523,8 @@ body > [type="checkbox"]:checked ~ label {
     padding-bottom: var(--padding-bottom); }
   @media (min-width: 1440px) {
     .footer__about {
-      max-width: 270px;
+      --elem_width: 270px;
+      max-width: var(--elem_width);
       padding-bottom: 0; } }
 
 .footer__pagination__list {
