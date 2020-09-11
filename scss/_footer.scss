@@ -9,7 +9,7 @@
 
   
   .container {
-    --padding-bottom: 75px;
+    --padding-bottom: 70px;
     padding-bottom: var(--padding-bottom);
 
     @media (min-width: $breakpoint-desktop) {
