@@ -345,10 +345,11 @@ body > [type="checkbox"]:checked ~ label {
 .section_mineral-carving__info--camera {
   flex-basis: 50%; }
   .section_mineral-carving__info--camera p {
+    --elem_width: 86px;
     max-width: 86px; }
     @media (min-width: 1440px) {
       .section_mineral-carving__info--camera p {
-        max-width: inherit; } }
+        --elem_width: inherit; } }
 
 .section_mineral-carving__info--lens {
   flex-basis: 50%; }
