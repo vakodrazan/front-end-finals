@@ -7,9 +7,9 @@ const clickImage = e => {
     const image = e.target;
     image.classList.add('open');
     const cloneImage = image.cloneNode(true); // clone the element
+    cloneImage.classList.add('imageViewing')
     slider.appendChild(cloneImage); // take the clone version then append it in another element
-    const removeChild = slider.removeChild(slider.firstElementChild); // remove the element that is already set there before
-    console.log("You click this image!", e.target)
+    const removeChild = slider.removeChild(slider.firstElementChild); // remove the element that is already there before
   }
 
 }
