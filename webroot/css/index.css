@@ -248,9 +248,11 @@ body > [type="checkbox"]:checked ~ label {
 .section_image-slider__gallery__image:last-of-type {
   padding-inline-end: 0; }
 
-@media (min-width: 1440px) {
-  .slider img {
-    width: 1440px; } }
+.imageViewing {
+  opacity: 1; }
+  @media (min-width: 1440px) {
+    .imageViewing {
+      width: 1440px; } }
 
 .section_image-slider__gallery img {
   opacity: 0.5; }
@@ -260,6 +262,9 @@ body > [type="checkbox"]:checked ~ label {
   opacity: 1; }
 
 .sliderImage.open {
+  opacity: 1; }
+
+.sliderImage:focus-within {
   opacity: 1; }
 
 .section_mineral-carving {

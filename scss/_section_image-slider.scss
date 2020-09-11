@@ -36,7 +36,8 @@
   padding-inline-end: 0;
 }
 
-.slider img {
+.imageViewing {
+  opacity: 1;
   @media (min-width: $breakpoint-desktop) {
     width: $breakpoint-desktop;
   }
@@ -55,5 +56,10 @@
 
 
 .sliderImage.open {
+  opacity: 1;
+}
+
+
+.sliderImage:focus-within {
   opacity: 1;
 }
