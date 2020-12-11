@@ -11,17 +11,17 @@
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
   }
-}
 
-.header__heading {
-  --fonts_size: 24px;
-  text-transform: uppercase;
-
-  > a {
-    color: $white;
-  }
-
-  @media (min-width: $breakpoint-desktop) {
-    --fonts_size: 40px;
+  &__heading {
+    --fonts_size: 24px;
+    text-transform: uppercase;
+  
+    > a {
+      color: $white;
+    }
+  
+    @media (min-width: $breakpoint-desktop) {
+      --fonts_size: 40px;
+    }
   }
 }

@@ -14,53 +14,48 @@
     overflow-x: hidden; // hide the overflowing in case it will break the design
     margin-right: 0;
   }
-}
 
-// To hide the scroll bar for all the webkit browser
-.section_image-slider__gallery::-webkit-scrollbar {
-  display: none;
-}
+  // To hide the scroll bar for all the webkit browser
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__image {
+    padding-right: 11px;
+  
+    > picture img.sliderImage {
+      --elem_width: 137px;
+      display: block;
+      max-width: var(--elem_width);
+  
+      @media (min-width: $breakpoint-desktop) {
+        --elem_width: 100%;
+      }
+    }
 
-
-.section_image-slider__gallery__image {
-  padding-right: 11px;
-
-  > picture img.sliderImage {
-    --elem_width: 137px;
-    display: block;
-    max-width: var(--elem_width);
-
-    @media (min-width: $breakpoint-desktop) {
-      --elem_width: 100%;
+    img {
+      cursor: pointer;
     }
   }
-  
+
+  img {
+    opacity: 0.5;
+
+    &:hover {
+      border: 1px solid $dark-gray;
+      opacity: 1;
+    }
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
 }
 
-.section_image-slider__gallery__image img {
-  cursor: pointer;
-}
-
-.section_image-slider__gallery__image:last-of-type {
-  padding-right: 0;
-}
 
 .imageViewing {
   opacity: 1;
   width: $breakpoint-desktop; // to make the image as big as the breakpoint, we need to set the width into an unit value
 }
-
-
-
-.section_image-slider__gallery img {
-  opacity: 0.5;
-}
-
-.section_image-slider__gallery img:hover {
-  border: 1px solid $dark-gray;
-  opacity: 1;
-}
-
 
 .sliderImage.open {
   opacity: 1;
