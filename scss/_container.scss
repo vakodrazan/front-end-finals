@@ -7,8 +7,13 @@
   padding-left: var(--padding-left);
   padding-right: var(--padding-right);
 
+  @media (min-width: $breakpoint-tablet) {
+    max-width: $breakpoint-tablet;
+    --padding-left: 20px;
+    --padding-right: 22px;
+  }
   @media (min-width: $breakpoint-desktop) {
-    max-width: var(--breakpoint_desktop);
+    max-width: $breakpoint-desktop;
     margin-left: auto;
     margin-right: auto;
     -ms-margin-left: auto;

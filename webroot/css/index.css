@@ -79,9 +79,14 @@ button {
   --padding-right: 15px;
   padding-left: var(--padding-left);
   padding-right: var(--padding-right); }
+  @media (min-width: 765px) {
+    .container {
+      max-width: 765px;
+      --padding-left: 20px;
+      --padding-right: 22px; } }
   @media (min-width: 1440px) {
     .container {
-      max-width: var(--breakpoint_desktop);
+      max-width: 1440px;
       margin-left: auto;
       margin-right: auto;
       -ms-margin-left: auto;
@@ -125,6 +130,9 @@ button {
       --padding-bottom: 65px;
       padding-top: var(--padding-top);
       padding-bottom: var(--padding-bottom); }
+      @media (min-width: 765px) {
+        .masthead__headings > h2 {
+          max-width: 450px; } }
       @media (min-width: 1440px) {
         .masthead__headings > h2 {
           --fonts_size: 72px; } }
@@ -137,6 +145,9 @@ button {
     font-size: 18px;
     line-height: 1.9;
     padding-bottom: 82px; }
+    @media (min-width: 765px) {
+      .masthead__description {
+        max-width: 450px; } }
     @media (min-width: 1440px) {
       .masthead__description {
         max-width: 585px; } }
@@ -312,6 +323,9 @@ body > [type="checkbox"]:checked ~ label {
       --padding-bottom: 31px;
       color: rgba(0, 0, 0, 0.5);
       padding-bottom: var(--padding-bottom); }
+    @media (min-width: 765px) {
+      .section_mineral-carving__desc {
+        max-width: 450px; } }
     @media (min-width: 1440px) {
       .section_mineral-carving__desc {
         max-width: 570px;
@@ -380,7 +394,7 @@ body > [type="checkbox"]:checked ~ label {
     .section_subscription__header > p {
       text-transform: uppercase;
       letter-spacing: 4.8px; }
-    @media (min-width: 1440px) {
+    @media (min-width: 765px) {
       .section_subscription__header {
         --elem_width: 382px;
         max-width: var(--elem_width); } }

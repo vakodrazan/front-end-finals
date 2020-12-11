@@ -1,10 +1,6 @@
-# Front-end final mockup-to-website project
+# Photograph mockup-to-website project
 
-Hey everyone! 
-
-This will be our final project in the front-end course, so let's make it a good one :)
-
-Please fork-and-clone this project as your own repo.
+In this project, I use ***HTML***, ***SASS*** and ***BEM***. Because it is based on html, the use of element does count much. Also, it is responsive design.
 
 First things first, let's get you set up. You will need the following…
 
@@ -33,7 +29,7 @@ You can find the design:
 
 Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
 
-2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
+Since `WOFF/WOFF2` is more flexible and more suportive, use it in fonts rules.
 
 ### Webroot
 

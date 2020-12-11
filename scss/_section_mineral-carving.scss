@@ -45,8 +45,11 @@
       color: $dark-gray;
       padding-bottom: var(--padding-bottom);
     }
-  
-    
+
+    @media (min-width: $breakpoint-tablet) {
+          max-width: $element-child-section-medium;
+    }
+
     @media (min-width: $breakpoint-desktop) {
       max-width: $element-child-section;
       padding-top: 0;
