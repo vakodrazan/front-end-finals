@@ -44,6 +44,7 @@ h6 {
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 a:hover {
@@ -62,4 +63,8 @@ address {
 
 dd {
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
