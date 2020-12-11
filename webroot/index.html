@@ -8,7 +8,7 @@
     </title>
     <link rel="stylesheet" href="./css/index.css">
   </head>
-  <body>
+  <body id="home">
     <input type="checkbox" id="menu_checkbox">
     <label for="menu_checkbox" class="icon icon_menu">
         Close the menu
@@ -49,7 +49,7 @@
           <div class="masthead__headings">
             <h2>Beauty is seen through a lens</h2>
             <p>
-              <a href="/">
+              <a href="#home">
                 <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M0.0389471 4.19464C0.0136567 4.13343 0 4.06766 0 3.99987C0 3.93259 0.0136567 3.86682 0.0389471 3.80561C0.0647433 3.74389 0.101668 3.68824 0.148202 3.6422L3.64181 0.147975C3.83958 -0.0493249 4.15925 -0.0493249 4.35703 0.147975C4.5548 0.345781 4.5548 0.666013 4.35703 0.863313L1.72683 3.49398H12.9942C13.2739 3.49398 13.5 3.72062 13.5 3.99987C13.5 4.27963 13.2739 4.50577 12.9942 4.50577H1.72683L4.35703 7.13643C4.5548 7.33424 4.5548 7.65447 4.35703 7.85177C4.25839 7.95093 4.12891 8 3.99942 8C3.86993 8 3.74045 7.95093 3.64181 7.85177L0.148202 4.35805C0.101668 4.31151 0.0647433 4.25636 0.0389471 4.19464" fill="black"/>
                 </svg>
@@ -226,7 +226,7 @@
           <nav class="footer__pagination">
             <ul class="footer__pagination__list">
               <li class="footer__pagination__list--homepage">
-                <a href="/">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
                 <a href="./about">About</a>
@@ -242,8 +242,8 @@
               </li>
             </ul>
           </nav>
-          <ul class="footer__author">
-            <li>
+          <div class="footer__author">
+            <address>
               <a href="./images/woman_sm.jpg" class="footer__author__item">
                 <figure>
                   <img src="./images/woman_sm.jpg" alt="This is the profil picture of the photographer woman">
@@ -256,9 +256,9 @@
                   <time datetime="2019-07-15">July 15, 2019</time>
                 </div>
               </a>
-            </li>
+            </address>
 
-            <li>
+            <address>
               <a href="./images/passage_sm.jpg" class="footer__author__item">
                 <figure>
                   <img src="./images/passage_sm.jpg" alt="This is the profil picture of the passage in Japan">
@@ -271,8 +271,8 @@
                   <time datetime="2019-07-10">July 10, 2019</time>
                 </div>
               </a>
-            </li>
-          </ul>
+            </address>
+          </div>
         </div>
         <div class="footer__status">
           <div class="container">

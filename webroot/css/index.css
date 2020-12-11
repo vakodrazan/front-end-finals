@@ -512,17 +512,17 @@ body > [type="checkbox"]:checked ~ label {
         padding-bottom: 0; } }
   .footer__pagination__list {
     --padding-bottom: 77px;
-    padding-bottom: var(--padding-bottom); }
-    .footer__pagination__list > li {
+    padding-bottom: var(--padding-bottom);
+    color: rgba(0, 0, 0, 0.5); }
+    .footer__pagination__list li:not(:last-of-type) {
       --padding-bottom: 15px;
       padding-bottom: var(--padding-bottom); }
-      .footer__pagination__list > li a {
-        color: rgba(0, 0, 0, 0.5); }
-    .footer__pagination__list > li:last-of-type {
-      padding-bottom: 0; }
-    .footer__pagination__list--homepage a {
+    .footer__pagination__list--homepage {
       font-weight: 700;
       color: #000; }
+  .footer address:not(:last-of-type) {
+    --padding-bottom: 15px;
+    padding-bottom: var(--padding-bottom); }
   .footer__author__item {
     display: flex;
     flex-direction: row; }
