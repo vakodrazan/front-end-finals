@@ -15,88 +15,85 @@
       align-items: flex-start;
     }
   }
-}
 
-.section_mineral-carving__desc {
-  --padding-top: 75px;
-  padding-top: var(--padding-top);
-
-  > header {
-
-    > h3 {
-      --fonts_size: 40px;
-      --padding-bottom: 31px;
-      padding-bottom: var(--padding-bottom);
-
-      @media (min-width: $breakpoint-desktop) {
-        --fonts_size: 52px;
+  &__desc {
+    --padding-top: 75px;
+    padding-top: var(--padding-top);
+  
+    > header {
+  
+      > h3 {
+        --fonts_size: 40px;
+        --padding-bottom: 31px;
+        padding-bottom: var(--padding-bottom);
+  
+        @media (min-width: $breakpoint-desktop) {
+          --fonts_size: 52px;
+        }
+      }
+  
+      > p {
+        --fonts_size: 18px;
+        --padding-bottom: 36px;
+  
+        font-size: var(--fonts_size);
+        padding-bottom: var(--padding-bottom);
       }
     }
-
     > p {
-      --fonts_size: 18px;
-      --padding-bottom: 36px;
-
-      font-size: var(--fonts_size);
+      --padding-bottom: 31px;
+      color: $dark-gray;
       padding-bottom: var(--padding-bottom);
     }
-  }
-
-  > p {
-    --padding-bottom: 31px;
-    color: $dark-gray;
-    padding-bottom: var(--padding-bottom);
-  }
-
   
-  @media (min-width: $breakpoint-desktop) {
-    max-width: $element-child-section;
-    padding-top: 0;
-  }
-}
-
-
-.section_mineral-carving__info {
-  @include flex-row();
-  flex-wrap: wrap; // when we use flex the element will not wrap unless we set a style to make it wrap
-
-  > li {
-    > span {
-      color: $dark-gray;
+    
+    @media (min-width: $breakpoint-desktop) {
+      max-width: $element-child-section;
+      padding-top: 0;
     }
+  }
 
-    > p {
+  &__info {
+    @include flex-row();
+    flex-wrap: wrap; // when we use flex the element will not wrap unless we set a style to make it wrap
+  
+    dt {
+        color: $dark-gray;
+      }
+  
+    dd {
       font-weight: 700;
     }
-  }
-}
 
-.section_mineral-carving__info--date {
-  --padding-bottom: 40px;
-  flex-basis: 50%;
-  padding-bottom: var(--padding-bottom);
-}
-
-
-.section_mineral-carving__info--location {
-  --padding-bottom: 40px;
-  flex-basis: 50%; // the element will just take 50% of the parents width
-  padding-bottom: var(--padding-bottom);
-}
-
-.section_mineral-carving__info--camera {
-  flex-basis: 50%;
-
-  p {
-    --elem_width: 86px;
-    max-width: 86px;
+    &--date {
+      --padding-bottom: 40px;
+      flex-basis: 50%;
+      padding-bottom: var(--padding-bottom);
+    }
   
-    @media (min-width: $breakpoint-desktop) {
-      --elem_width: inherit;
+  
+    &--location {
+      --padding-bottom: 40px;
+      flex-basis: 50%; // the element will just take 50% of the parents width
+      padding-bottom: var(--padding-bottom);
+    }
+  
+    &--camera {
+      flex-basis: 50%;
+    
+      dd {
+        --elem_width: 86px;
+        max-width: 86px;
+      
+        @media (min-width: $breakpoint-desktop) {
+          --elem_width: inherit;
+        }
+      }
+    }
+  
+    &--lens {
+      flex-basis: 50%;
     }
   }
-}
 
-.section_mineral-carving__info--lens {
-  flex-basis: 50%;
 }

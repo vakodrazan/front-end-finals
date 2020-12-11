@@ -67,6 +67,9 @@ img {
 address {
   font-style: normal; }
 
+dd {
+  margin: 0; }
+
 .container {
   --padding-left: 14px;
   --padding-right: 15px;
@@ -295,64 +298,58 @@ body > [type="checkbox"]:checked ~ label {
         justify-content: space-between;
         align-items: center;
         align-items: flex-start; } }
-
-.section_mineral-carving__desc {
-  --padding-top: 75px;
-  padding-top: var(--padding-top); }
-  .section_mineral-carving__desc > header > h3 {
-    --fonts_size: 40px;
-    --padding-bottom: 31px;
-    padding-bottom: var(--padding-bottom); }
+  .section_mineral-carving__desc {
+    --padding-top: 75px;
+    padding-top: var(--padding-top); }
+    .section_mineral-carving__desc > header > h3 {
+      --fonts_size: 40px;
+      --padding-bottom: 31px;
+      padding-bottom: var(--padding-bottom); }
+      @media (min-width: 1440px) {
+        .section_mineral-carving__desc > header > h3 {
+          --fonts_size: 52px; } }
+    .section_mineral-carving__desc > header > p {
+      --fonts_size: 18px;
+      --padding-bottom: 36px;
+      font-size: var(--fonts_size);
+      padding-bottom: var(--padding-bottom); }
+    .section_mineral-carving__desc > p {
+      --padding-bottom: 31px;
+      color: rgba(0, 0, 0, 0.5);
+      padding-bottom: var(--padding-bottom); }
     @media (min-width: 1440px) {
-      .section_mineral-carving__desc > header > h3 {
-        --fonts_size: 52px; } }
-  .section_mineral-carving__desc > header > p {
-    --fonts_size: 18px;
-    --padding-bottom: 36px;
-    font-size: var(--fonts_size);
-    padding-bottom: var(--padding-bottom); }
-  .section_mineral-carving__desc > p {
-    --padding-bottom: 31px;
-    color: rgba(0, 0, 0, 0.5);
-    padding-bottom: var(--padding-bottom); }
-  @media (min-width: 1440px) {
-    .section_mineral-carving__desc {
-      max-width: 570px;
-      padding-top: 0; } }
-
-.section_mineral-carving__info {
-  display: flex;
-  display: -ms-flexbox;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-  .section_mineral-carving__info > li > span {
-    color: rgba(0, 0, 0, 0.5); }
-  .section_mineral-carving__info > li > p {
-    font-weight: 700; }
-
-.section_mineral-carving__info--date {
-  --padding-bottom: 40px;
-  flex-basis: 50%;
-  padding-bottom: var(--padding-bottom); }
-
-.section_mineral-carving__info--location {
-  --padding-bottom: 40px;
-  flex-basis: 50%;
-  padding-bottom: var(--padding-bottom); }
-
-.section_mineral-carving__info--camera {
-  flex-basis: 50%; }
-  .section_mineral-carving__info--camera p {
-    --elem_width: 86px;
-    max-width: 86px; }
-    @media (min-width: 1440px) {
-      .section_mineral-carving__info--camera p {
-        --elem_width: inherit; } }
-
-.section_mineral-carving__info--lens {
-  flex-basis: 50%; }
+      .section_mineral-carving__desc {
+        max-width: 570px;
+        padding-top: 0; } }
+  .section_mineral-carving__info {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .section_mineral-carving__info dt {
+      color: rgba(0, 0, 0, 0.5); }
+    .section_mineral-carving__info dd {
+      font-weight: 700; }
+    .section_mineral-carving__info--date {
+      --padding-bottom: 40px;
+      flex-basis: 50%;
+      padding-bottom: var(--padding-bottom); }
+    .section_mineral-carving__info--location {
+      --padding-bottom: 40px;
+      flex-basis: 50%;
+      padding-bottom: var(--padding-bottom); }
+    .section_mineral-carving__info--camera {
+      flex-basis: 50%; }
+      .section_mineral-carving__info--camera dd {
+        --elem_width: 86px;
+        max-width: 86px; }
+        @media (min-width: 1440px) {
+          .section_mineral-carving__info--camera dd {
+            --elem_width: inherit; } }
+    .section_mineral-carving__info--lens {
+      flex-basis: 50%; }
 
 .section_subscription {
   --padding-top: 63px;
