@@ -17,9 +17,10 @@
 
       @media (min-width: $breakpoint-tablet) {
         max-width: $element-child-section-medium;
-  }
+      }
   
       @media (min-width: $breakpoint-desktop) {
+        max-width: $masthead_width;
         --fonts_size: 72px;
       }
     }

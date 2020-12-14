@@ -81,7 +81,6 @@ button {
   padding-right: var(--padding-right); }
   @media (min-width: 765px) {
     .container {
-      max-width: 765px;
       --padding-left: 20px;
       --padding-right: 22px; } }
   @media (min-width: 1440px) {
@@ -135,6 +134,7 @@ button {
           max-width: 450px; } }
       @media (min-width: 1440px) {
         .masthead__headings > h2 {
+          max-width: 585px;
           --fonts_size: 72px; } }
     .masthead__headings > p a {
       color: rgba(0, 0, 0, 0.5); }
