@@ -31,6 +31,10 @@
       max-width: var(--elem_width);
 
       @media (min-width: $breakpoint-tablet) {
+        --elem_width: 147px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
         --elem_width: 100%;
       }
     }

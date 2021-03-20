@@ -17,6 +17,10 @@
     margin-right: auto;
     -ms-margin-left: auto;
     -ms-margin-right: auto;
-    padding: 0;
   }
+}
+
+.content {
+  overflow-x: hidden;
+  position: relative;
 }

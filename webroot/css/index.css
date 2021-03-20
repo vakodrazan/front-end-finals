@@ -22,7 +22,7 @@
   --padding-bottom: 11px;
   --padding-right: 45px;
   --padding-left: 45px;
-  --breakpoint_desktop: 1440px;
+  --breakpoint_desktop: 1240px;
   --elem_width: 324px; }
 
 body {
@@ -30,7 +30,6 @@ body {
   font-size: var(--fonts_size);
   line-height: 1.5;
   margin: 0;
-  overflow-x: hidden;
   background-color: rgba(67, 76, 204, 0.05); }
 
 ul {
@@ -83,14 +82,17 @@ button {
     .container {
       --padding-left: 20px;
       --padding-right: 22px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1240px) {
     .container {
-      max-width: 1440px;
+      max-width: 1240px;
       margin-left: auto;
       margin-right: auto;
       -ms-margin-left: auto;
-      -ms-margin-right: auto;
-      padding: 0; } }
+      -ms-margin-right: auto; } }
+
+.content {
+  overflow-x: hidden;
+  position: relative; }
 
 .header {
   background-color: #434CCC; }
@@ -111,7 +113,7 @@ button {
     text-transform: uppercase; }
     .header__heading > a {
       color: #fff; }
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
       .header__heading {
         --fonts_size: 40px; } }
 
@@ -132,13 +134,13 @@ button {
       @media (min-width: 765px) {
         .masthead__headings > h2 {
           max-width: 450px; } }
-      @media (min-width: 1440px) {
+      @media (min-width: 1240px) {
         .masthead__headings > h2 {
           max-width: 585px;
           --fonts_size: 72px; } }
     .masthead__headings > p a {
       color: rgba(0, 0, 0, 0.5); }
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
       .masthead__headings {
         max-width: 585px; } }
   .masthead__description {
@@ -148,7 +150,7 @@ button {
     @media (min-width: 765px) {
       .masthead__description {
         max-width: 450px; } }
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
       .masthead__description {
         max-width: 585px; } }
 
@@ -162,13 +164,13 @@ button {
     .menu {
       display: none; } }
 
-body > [type="checkbox"] {
+.checkbox-menu[type="checkbox"] {
   display: none; }
 
-body > [type="checkbox"]:checked ~ header .navigation {
+.checkbox-menu[type="checkbox"]:checked ~ header .navigation {
   transform: translateY(0); }
 
-body > label {
+.close-menu {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -180,13 +182,13 @@ body > label {
   transition: opacity 1s;
   background-color: rgba(0, 0, 0, 0.25); }
   @media (min-width: 765px) {
-    body > label {
+    .close-menu {
       background-color: initial; } }
 
-body > [type="checkbox"]:checked ~ main {
+.checkbox-menu[type="checkbox"]:checked ~ main {
   z-index: 1; }
 
-body > [type="checkbox"]:checked ~ label {
+.checkbox-menu[type="checkbox"]:checked ~ label {
   z-index: 2;
   opacity: 1; }
 
@@ -260,7 +262,7 @@ body > [type="checkbox"]:checked ~ label {
   @media (min-width: 765px) {
     .section_image-slider__gallery {
       margin: 0; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1240px) {
     .section_image-slider__gallery {
       overflow-x: hidden; } }
   .section_image-slider__gallery::-webkit-scrollbar {
@@ -270,6 +272,9 @@ body > [type="checkbox"]:checked ~ label {
     display: block;
     max-width: var(--elem_width); }
     @media (min-width: 765px) {
+      .section_image-slider__gallery__image > picture img.sliderImage {
+        --elem_width: 147px; } }
+    @media (min-width: 1240px) {
       .section_image-slider__gallery__image > picture img.sliderImage {
         --elem_width: 100%; } }
   .section_image-slider__gallery__image img {
@@ -285,7 +290,7 @@ body > [type="checkbox"]:checked ~ label {
 
 .image-active {
   opacity: 1;
-  width: 1440px; }
+  width: 1240px; }
 
 img.open {
   opacity: 1; }
@@ -300,7 +305,7 @@ img.open {
     display: -ms-flexbox;
     flex-direction: column-reverse;
     justify-content: space-between; }
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
       .section_mineral-carving > .container {
         display: flex;
         display: -ms-flexbox;
@@ -315,7 +320,7 @@ img.open {
       --fonts_size: 40px;
       --padding-bottom: 31px;
       padding-bottom: var(--padding-bottom); }
-      @media (min-width: 1440px) {
+      @media (min-width: 1240px) {
         .section_mineral-carving__desc > header > h3 {
           --fonts_size: 52px; } }
     .section_mineral-carving__desc > header > p {
@@ -330,7 +335,7 @@ img.open {
     @media (min-width: 765px) {
       .section_mineral-carving__desc {
         max-width: 450px; } }
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
       .section_mineral-carving__desc {
         max-width: 570px;
         padding-top: 0; } }
@@ -358,7 +363,7 @@ img.open {
       .section_mineral-carving__info--camera dd {
         --elem_width: 86px;
         max-width: 86px; }
-        @media (min-width: 1440px) {
+        @media (min-width: 1240px) {
           .section_mineral-carving__info--camera dd {
             --elem_width: inherit; } }
     .section_mineral-carving__info--lens {
@@ -392,7 +397,7 @@ img.open {
       line-height: 1.3;
       padding-top: var(--padding-top);
       padding-bottom: var(--padding-bottom); }
-      @media (min-width: 1440px) {
+      @media (min-width: 1240px) {
         .section_subscription__header > h3 {
           --fonts_size: 52px; } }
     .section_subscription__header > p {
@@ -436,7 +441,10 @@ img.open {
         border-radius: 5px;
         padding-top: var(--padding-top);
         padding-bottom: var(--padding-bottom); }
-      @media (min-width: 1440px) {
+        @media (min-width: 765px) {
+          .section_subscription__form > fieldset > input {
+            width: 346px; } }
+      @media (min-width: 1240px) {
         .section_subscription__form > fieldset {
           --padding-right: 54px;
           padding-bottom: 0;
@@ -457,7 +465,7 @@ img.open {
       padding-bottom: var(--padding-bottom); }
       .section_subscription__form > button:hover {
         background-color: rgba(67, 76, 204, 0.8); }
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
       .section_subscription__form {
         display: flex;
         display: -ms-flexbox;
@@ -560,7 +568,7 @@ img.open {
       padding-bottom: 0; }
       .footer__status > .container > p span {
         text-transform: uppercase; }
-      @media (min-width: 1440px) {
+      @media (min-width: 1240px) {
         .footer__status > .container {
           display: flex;
           display: -ms-flexbox;
