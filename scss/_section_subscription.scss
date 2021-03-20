@@ -85,9 +85,9 @@
         padding-top: var(--padding-top);
         padding-bottom: var(--padding-bottom);
 
-        @media (min-width: $breakpoint-tablet) {
-          width: 346px;
-        }
+        // @media (min-width: $breakpoint-tablet) {
+        //   width: 346px;
+        // }
       }
 
       @media (min-width: $breakpoint-desktop) {

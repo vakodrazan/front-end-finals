@@ -4,26 +4,13 @@
   max-width: var(--elem_width);
 
   &__icon {
-    > a {
-      --elem_width: 18px;
-      @include hide-text(); // if you hide the text by using text-indent, avoid the page from overflowing
-      display: block;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: var(--elem_width);
-      height: $based_unit;
-    }
+    a {
+      color: #000;
+      opacity: 0.3;
 
-    &--facebook {
-      background-image: url("#{$path-to-image}icon_facebook.svg");
-    }
-  
-    &--twitter {
-      background-image: url("#{$path-to-image}icon_twitter.svg");
-    }
-  
-    &--instagram {
-      background-image: url("#{$path-to-image}icon_instagram.svg");
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }

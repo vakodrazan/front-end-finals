@@ -436,9 +436,6 @@ img.open {
         border-radius: 5px;
         padding-top: var(--padding-top);
         padding-bottom: var(--padding-bottom); }
-        @media (min-width: 765px) {
-          .section_subscription__form > fieldset > input {
-            width: 346px; } }
       @media (min-width: 1440px) {
         .section_subscription__form > fieldset {
           --padding-right: 54px;
@@ -477,21 +474,11 @@ img.open {
   justify-content: space-between;
   align-items: center;
   max-width: var(--elem_width); }
-  .social-media__icon > a {
-    --elem_width: 18px;
-    text-indent: -999px;
-    overflow: hidden;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: var(--elem_width);
-    height: 16px; }
-  .social-media__icon--facebook {
-    background-image: url("../images/icon_facebook.svg"); }
-  .social-media__icon--twitter {
-    background-image: url("../images/icon_twitter.svg"); }
-  .social-media__icon--instagram {
-    background-image: url("../images/icon_instagram.svg"); }
+  .social-media__icon a {
+    color: #000;
+    opacity: 0.3; }
+    .social-media__icon a:hover {
+      opacity: 0.5; }
 
 .footer {
   --padding-top: 75px;
