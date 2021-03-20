@@ -498,7 +498,7 @@ img.open {
   .footer .container {
     --padding-bottom: 70px;
     padding-bottom: var(--padding-bottom); }
-    @media (min-width: 1440px) {
+    @media (min-width: 765px) {
       .footer .container {
         display: flex;
         display: -ms-flexbox;
@@ -523,7 +523,7 @@ img.open {
       color: rgba(0, 0, 0, 0.5);
       padding-top: var(--padding-top);
       padding-bottom: var(--padding-bottom); }
-    @media (min-width: 1440px) {
+    @media (min-width: 765px) {
       .footer__about {
         --elem_width: 270px;
         max-width: var(--elem_width);
@@ -544,6 +544,9 @@ img.open {
   .footer__author__item {
     display: flex;
     flex-direction: row; }
+    .footer__author__item:hover {
+      text-decoration: none;
+      opacity: 0.8; }
     .footer__author__item img {
       max-width: 70px; }
     .footer__author__item > div {

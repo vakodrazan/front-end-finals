@@ -12,7 +12,7 @@
     --padding-bottom: 70px;
     padding-bottom: var(--padding-bottom);
 
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: $breakpoint-tablet) {
       @include flex-row();
       align-items: flex-start; // if we use align items center, everyting will be in the center but to align at the beginning
       padding-bottom: 0;
@@ -43,7 +43,7 @@
       padding-bottom: var(--padding-bottom);
     }
   
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: $breakpoint-tablet) {
       --elem_width: 270px;
       max-width: var(--elem_width);
       padding-bottom: 0;
@@ -77,10 +77,15 @@
     display: flex;
     flex-direction: row;
 
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
     img {
       max-width: 70px;
     }
-  
+
     > div {
       display: flex;
       flex-direction: column;
