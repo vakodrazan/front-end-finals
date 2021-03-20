@@ -52,11 +52,11 @@
 }
 
 
-.imageViewing {
+.image-active {
   opacity: 1;
   width: $breakpoint-desktop; // to make the image as big as the breakpoint, we need to set the width into an unit value
 }
 
-.sliderImage.open {
+.open {
   opacity: 1;
 }

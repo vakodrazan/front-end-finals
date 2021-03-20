@@ -279,11 +279,11 @@ body > [type="checkbox"]:checked ~ label {
   .section_image-slider__gallery:last-of-type {
     padding-right: 0; }
 
-.imageViewing {
+.image-active {
   opacity: 1;
   width: 1440px; }
 
-.sliderImage.open {
+.open {
   opacity: 1; }
 
 .section_mineral-carving {
