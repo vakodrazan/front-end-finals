@@ -108,5 +108,6 @@
 
   @media (min-width: $breakpoint-tablet) {
     @include flex-row();
+    gap: 39px;
   }
 }

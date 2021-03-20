@@ -242,7 +242,8 @@ button {
       display: -ms-flexbox;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center; } }
+      align-items: center;
+      gap: 39px; } }
 
 .section_image-slider__header {
   display: none; }
