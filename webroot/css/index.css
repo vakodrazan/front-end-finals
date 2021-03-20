@@ -158,7 +158,7 @@ button {
   background-size: 24px 24px;
   background-position: 50% 50%;
   color: transparent; }
-  @media (min-width: 1440px) {
+  @media (min-width: 765px) {
     .menu {
       display: none; } }
 
@@ -179,7 +179,7 @@ body > label {
   opacity: 0;
   transition: opacity 1s;
   background-color: rgba(0, 0, 0, 0.25); }
-  @media (min-width: 1440px) {
+  @media (min-width: 765px) {
     body > label {
       background-color: initial; } }
 
@@ -191,12 +191,13 @@ body > [type="checkbox"]:checked ~ label {
   opacity: 1; }
 
 .header .navigation {
-  --padding-top: 1rem;
+  --padding: 16px;
+  --padding-right: 16px;
   --elem_width: 250px;
-  padding-top: var(--padding-top);
-  padding-bottom: var(--padding-top);
-  padding-left: var(--padding-top);
-  padding-right: var(--padding-top);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  padding-left: var(--padding);
+  padding-right: var(--padding-right);
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
@@ -207,11 +208,12 @@ body > [type="checkbox"]:checked ~ label {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateY(-110%);
   transition: transform 0.2s; }
-  @media (min-width: 1440px) {
+  @media (min-width: 765px) {
     .header .navigation {
       --elem_width: 324px;
+      --padding: 0;
+      --padding-right: 22px;
       position: initial;
-      padding: 0;
       background-color: transparent;
       box-shadow: none;
       transform: none;
@@ -225,13 +227,13 @@ body > [type="checkbox"]:checked ~ label {
     font-weight: 700; }
     .navigation__list > li a {
       color: rgba(0, 0, 0, 0.5); }
-      @media (min-width: 1440px) {
+      @media (min-width: 765px) {
         .navigation__list > li a {
           color: #fff; } }
-    @media (min-width: 1440px) {
+    @media (min-width: 765px) {
       .navigation__list > li {
         padding-bottom: 0; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 765px) {
     .navigation__list {
       display: flex;
       display: -ms-flexbox;
