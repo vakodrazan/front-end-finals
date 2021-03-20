@@ -158,8 +158,9 @@ button {
   background-image: url("../images/icon_menu.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  background-position: 50% 50%;
-  color: transparent; }
+  background-position: 80% 50%;
+  color: transparent;
+  cursor: pointer; }
   @media (min-width: 765px) {
     .menu {
       display: none; } }
