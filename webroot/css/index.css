@@ -425,7 +425,8 @@ img.open {
         padding-bottom: var(--padding-bottom); }
       .section_subscription__form > fieldset > input {
         --padding-right: 16px;
-        width: 346px;
+        width: 100%;
+        max-width: 346px;
         font-family: 'DM Sans', Arial, Helvetica, sans-serif;
         font-size: var(--fonts_size);
         box-sizing: border-box;
@@ -435,6 +436,9 @@ img.open {
         border-radius: 5px;
         padding-top: var(--padding-top);
         padding-bottom: var(--padding-bottom); }
+        @media (min-width: 765px) {
+          .section_subscription__form > fieldset > input {
+            width: 346px; } }
       @media (min-width: 1440px) {
         .section_subscription__form > fieldset {
           --padding-right: 54px;
