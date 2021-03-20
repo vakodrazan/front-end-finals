@@ -369,7 +369,7 @@ body > [type="checkbox"]:checked ~ label {
   background-color: #FFDD78;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom); }
-  @media (min-width: 1440px) {
+  @media (min-width: 765px) {
     .section_subscription {
       --padding-top: 76px;
       --padding-bottom: 72px; }

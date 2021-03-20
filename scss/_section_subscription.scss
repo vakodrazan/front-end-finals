@@ -8,7 +8,7 @@
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-tablet) {
     .container {
       @include flex-row();
     }
