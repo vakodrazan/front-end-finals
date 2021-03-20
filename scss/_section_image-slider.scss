@@ -19,8 +19,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  &__image {
-    padding-right: 11px;
+  &__image { 
+    &:not(:last-of-type) {
+      padding-right: 11px;
+    }
   
     > picture img.sliderImage {
       --elem_width: 137px;
@@ -39,6 +41,7 @@
 
   img {
     opacity: 0.5;
+    border: 1px solid transparent;
 
     &:hover {
       border: 1px solid $dark-gray;
