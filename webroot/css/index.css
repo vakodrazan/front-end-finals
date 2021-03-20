@@ -250,25 +250,26 @@ body > [type="checkbox"]:checked ~ label {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 11px;
   overflow-x: scroll;
   margin-right: -2rem;
   scrollbar-width: none;
   /* To hide the scroll bar for Firefox */
   -ms-overflow-style: none;
   /* To hide the scroll bar for Internet Explorer 11 */ }
+  @media (min-width: 765px) {
+    .section_image-slider__gallery {
+      margin: 0; } }
   @media (min-width: 1440px) {
     .section_image-slider__gallery {
-      overflow-x: hidden;
-      margin-right: 0; } }
+      overflow-x: hidden; } }
   .section_image-slider__gallery::-webkit-scrollbar {
     display: none; }
-  .section_image-slider__gallery__image:not(:last-of-type) {
-    padding-right: 11px; }
   .section_image-slider__gallery__image > picture img.sliderImage {
     --elem_width: 137px;
     display: block;
     max-width: var(--elem_width); }
-    @media (min-width: 1440px) {
+    @media (min-width: 765px) {
       .section_image-slider__gallery__image > picture img.sliderImage {
         --elem_width: 100%; } }
   .section_image-slider__gallery__image img {
@@ -286,7 +287,7 @@ body > [type="checkbox"]:checked ~ label {
   opacity: 1;
   width: 1440px; }
 
-.open {
+img.open {
   opacity: 1; }
 
 .section_mineral-carving {

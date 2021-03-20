@@ -1,4 +1,5 @@
 const imageCollection = document.querySelectorAll('.sliderImage');
+const sliderImage = document.querySelectorAll('.sliderImage');
 
 const activeImage = document.querySelector('.image-active');
 const firstImage = document.querySelector('.open');
@@ -8,8 +9,8 @@ const allImages = Array.from(document.querySelectorAll('.section_image-slider__g
 const imageSlider = (e) => {
   const clickedImage = e.target;
    activeImage.src = clickedImage.src
-   firstImage.classList.remove('open')
-   imageCollection.forEach(image => image.style.opacity = 0.5);
+   sliderImage.forEach(image => image.style.opacity = 0.5);
+   firstImage.classList.remove('open');
    clickedImage.style.opacity = 1;
 }
 

@@ -5,31 +5,32 @@
 
 .section_image-slider__gallery {
   @include flex-row();
+  gap: 11px;
   overflow-x: scroll;
   margin-right: -2rem;
   scrollbar-width: none; /* To hide the scroll bar for Firefox */
   -ms-overflow-style: none; /* To hide the scroll bar for Internet Explorer 11 */
 
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0;
+  }
+
   @media (min-width: $breakpoint-desktop) {
     overflow-x: hidden; // hide the overflowing in case it will break the design
-    margin-right: 0;
   }
 
   // To hide the scroll bar for all the webkit browser
   &::-webkit-scrollbar {
     display: none;
   }
-  &__image { 
-    &:not(:last-of-type) {
-      padding-right: 11px;
-    }
+  &__image {
   
     > picture img.sliderImage {
       --elem_width: 137px;
       display: block;
       max-width: var(--elem_width);
-  
-      @media (min-width: $breakpoint-desktop) {
+
+      @media (min-width: $breakpoint-tablet) {
         --elem_width: 100%;
       }
     }
@@ -60,6 +61,6 @@
   width: $breakpoint-desktop; // to make the image as big as the breakpoint, we need to set the width into an unit value
 }
 
-.open {
+img.open {
   opacity: 1;
 }
