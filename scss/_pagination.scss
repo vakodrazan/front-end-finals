@@ -62,7 +62,7 @@
   padding-left: var(--padding);
   padding-right: var(--padding-right);
   background-color: #f8f8f8;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 0;
   left: 0;
@@ -71,6 +71,16 @@
   box-shadow: 0 0 50px rgba(0,0,0,.5);
   transform: translateY(-110%);
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+
+  &__close-menu {
+    text-align: right;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: $breakpoint-tablet) {
     --elem_width: 324px;
@@ -85,29 +95,31 @@
 }
 
 
-.navigation__list {
-  order: 1;
+.navigation {
+    &__list {
+    order: 1;
 
-  > li {
-    --padding-bottom: 2rem;
+    > li {
+      --padding-bottom: 2rem;
 
-    padding-bottom: var(--padding-bottom);
-    font-weight: 700;
+      padding-bottom: var(--padding-bottom);
+      font-weight: 700;
 
-    a {
-      color: $dark-gray;
+      a {
+        color: $dark-gray;
 
+        @media (min-width: $breakpoint-tablet) {
+          color: $white;
+        }
+      }
       @media (min-width: $breakpoint-tablet) {
-        color: $white;
+        padding-bottom: 0;
       }
     }
-    @media (min-width: $breakpoint-tablet) {
-      padding-bottom: 0;
-    }
-  }
 
-  @media (min-width: $breakpoint-tablet) {
-    @include flex-row();
-    gap: 39px;
+    @media (min-width: $breakpoint-tablet) {
+      @include flex-row();
+      gap: 39px;
+    }
   }
 }
