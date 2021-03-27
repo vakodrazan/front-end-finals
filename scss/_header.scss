@@ -1,15 +1,17 @@
 @import "variables";
 
 .header {
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+
   background-color: $blue;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+
   > .container {
-    --padding-top: #{$based_unit};
-    --padding-bottom: #{$based_unit};
     --padding-right: 14px;
     @include flex-row();
     padding-right: 0;
-    padding-top: var(--padding-top);
-    padding-bottom: var(--padding-bottom);
   }
 
   &__heading {

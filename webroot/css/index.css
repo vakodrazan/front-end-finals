@@ -95,19 +95,19 @@ button {
   position: relative; }
 
 .header {
-  background-color: #434CCC; }
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  background-color: #434CCC;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom); }
   .header > .container {
-    --padding-top: 16px;
-    --padding-bottom: 16px;
     --padding-right: 14px;
     display: flex;
     display: -ms-flexbox;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 0;
-    padding-top: var(--padding-top);
-    padding-bottom: var(--padding-bottom); }
+    padding-right: 0; }
   .header__heading {
     --fonts_size: 24px;
     text-transform: uppercase; }
