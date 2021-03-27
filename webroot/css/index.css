@@ -22,7 +22,7 @@
   --padding-bottom: 11px;
   --padding-right: 45px;
   --padding-left: 45px;
-  --breakpoint_desktop: 1240px;
+  --breakpoint_desktop: 1440px;
   --elem_width: 324px; }
 
 body {
@@ -82,9 +82,9 @@ button {
     .container {
       --padding-left: 20px;
       --padding-right: 22px; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1440px) {
     .container {
-      max-width: 1240px;
+      max-width: 1170px;
       margin-left: auto;
       margin-right: auto;
       -ms-margin-left: auto;
@@ -113,7 +113,7 @@ button {
     text-transform: uppercase; }
     .header__heading > a {
       color: #fff; }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .header__heading {
         --fonts_size: 40px; } }
 
@@ -134,13 +134,13 @@ button {
       @media (min-width: 765px) {
         .masthead__headings > h2 {
           max-width: 450px; } }
-      @media (min-width: 1240px) {
+      @media (min-width: 1440px) {
         .masthead__headings > h2 {
           max-width: 585px;
           --fonts_size: 72px; } }
     .masthead__headings > p a {
       color: rgba(0, 0, 0, 0.5); }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .masthead__headings {
         max-width: 585px; } }
   .masthead__description {
@@ -150,7 +150,7 @@ button {
     @media (min-width: 765px) {
       .masthead__description {
         max-width: 450px; } }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .masthead__description {
         max-width: 585px; } }
 
@@ -274,7 +274,7 @@ button {
   @media (min-width: 765px) {
     .section_image-slider__gallery {
       margin: 0; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1440px) {
     .section_image-slider__gallery {
       overflow-x: hidden; } }
   .section_image-slider__gallery::-webkit-scrollbar {
@@ -286,7 +286,7 @@ button {
     @media (min-width: 765px) {
       .section_image-slider__gallery__image > picture img.sliderImage {
         --elem_width: 147px; } }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .section_image-slider__gallery__image > picture img.sliderImage {
         --elem_width: 100%; } }
   .section_image-slider__gallery__image img {
@@ -302,7 +302,7 @@ button {
 
 .image-active {
   opacity: 1;
-  width: 1240px; }
+  width: 1440px; }
 
 img.open {
   opacity: 1; }
@@ -317,7 +317,7 @@ img.open {
     display: -ms-flexbox;
     flex-direction: column-reverse;
     justify-content: space-between; }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .section_mineral-carving > .container {
         display: flex;
         display: -ms-flexbox;
@@ -332,7 +332,7 @@ img.open {
       --fonts_size: 40px;
       --padding-bottom: 31px;
       padding-bottom: var(--padding-bottom); }
-      @media (min-width: 1240px) {
+      @media (min-width: 1440px) {
         .section_mineral-carving__desc > header > h3 {
           --fonts_size: 52px; } }
     .section_mineral-carving__desc > header > p {
@@ -347,7 +347,7 @@ img.open {
     @media (min-width: 765px) {
       .section_mineral-carving__desc {
         max-width: 450px; } }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .section_mineral-carving__desc {
         max-width: 570px;
         padding-top: 0; } }
@@ -375,7 +375,7 @@ img.open {
       .section_mineral-carving__info--camera dd {
         --elem_width: 86px;
         max-width: 86px; }
-        @media (min-width: 1240px) {
+        @media (min-width: 1440px) {
           .section_mineral-carving__info--camera dd {
             --elem_width: inherit; } }
     .section_mineral-carving__info--lens {
@@ -410,7 +410,7 @@ img.open {
     .section_subscription__header > h3 {
       --fonts_size: 40px;
       line-height: 1.3; }
-      @media (min-width: 1240px) {
+      @media (min-width: 1440px) {
         .section_subscription__header > h3 {
           --fonts_size: 52px; } }
     .section_subscription__header > p {
@@ -429,7 +429,7 @@ img.open {
     display: flex;
     flex-direction: column;
     gap: var(--element-gap); }
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
       .section_subscription__form {
         --element-gap: 54px;
         flex-direction: row;
@@ -467,7 +467,7 @@ img.open {
         @media (min-width: 765px) {
           .section_subscription__form > fieldset > input {
             width: 346px; } }
-      @media (min-width: 1240px) {
+      @media (min-width: 1440px) {
         .section_subscription__form > fieldset {
           padding-bottom: 0; } }
     .section_subscription__form > button {
@@ -584,7 +584,7 @@ img.open {
       padding-bottom: 0; }
       .footer__status > .container > p span {
         text-transform: uppercase; }
-      @media (min-width: 1240px) {
+      @media (min-width: 1440px) {
         .footer__status > .container {
           display: flex;
           display: -ms-flexbox;
