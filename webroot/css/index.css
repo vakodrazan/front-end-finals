@@ -214,7 +214,10 @@ button {
   display: flex;
   flex-direction: column; }
   .header .navigation__close-menu {
-    text-align: right; }
+    text-align: right;
+    width: 40px;
+    align-self: flex-end;
+    cursor: pointer; }
     @media (min-width: 765px) {
       .header .navigation__close-menu {
         display: none; } }

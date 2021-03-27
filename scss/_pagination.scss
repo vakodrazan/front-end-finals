@@ -76,6 +76,9 @@
 
   &__close-menu {
     text-align: right;
+    width: 40px;
+    align-self: flex-end;
+    cursor: pointer;
 
     @media (min-width: $breakpoint-tablet) {
       display: none;
