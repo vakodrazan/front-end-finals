@@ -499,7 +499,7 @@ img.open {
         background-color: rgba(67, 76, 204, 0.8); }
 
 .social-media {
-  --elem_width: 100px;
+  --elem_width: 68px;
   display: flex;
   display: -ms-flexbox;
   flex-direction: row;

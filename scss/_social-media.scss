@@ -1,5 +1,5 @@
 .social-media {
-  --elem_width: 100px;
+  --elem_width: 68px;
   @include flex-row();
   max-width: var(--elem_width);
 
