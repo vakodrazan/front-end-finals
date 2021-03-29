@@ -80,6 +80,7 @@
         font-weight: bold;
         font-size: var(--fonts_size);
         text-transform: uppercase;
+        line-height: 16px;
       }
     
       > input {
@@ -88,6 +89,7 @@
         width: 100%;
         font-family: 'DM Sans', Arial, Helvetica, sans-serif;
         font-size: var(--fonts_size);
+        line-height: 24px;
         box-sizing: border-box;
         border: 1px solid $light-gray;
         line-height: 1.5;
@@ -96,6 +98,19 @@
         border-radius: $radius;
         padding-top: var(--padding-top);
         padding-bottom: var(--padding-bottom);
+        color: $dark-gray;
+        mix-blend-mode: normal;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: $dark-gray;
+          mix-blend-mode: normal;
+          font-style: normal;
+          font-weight: normal;
+        }
 
         @media (min-width: $breakpoint-tablet) {
           width: 346px;
