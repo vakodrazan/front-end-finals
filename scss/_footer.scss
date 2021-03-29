@@ -2,7 +2,7 @@
 
 .footer {
   --padding-top: 75px;
-  --padding-bottom: 28px;
+  --padding-bottom: 29px;
   background-color: $white;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-top);
@@ -20,7 +20,7 @@
   }
 
   &__about {
-    --padding-bottom: 78px;
+    --padding-bottom: 90px;
     padding-bottom: var(--padding-bottom);
   
     > span {
@@ -36,7 +36,7 @@
   
     > p {
       --padding-top: 23px;
-      --padding-bottom: 38px;
+      --padding-bottom: 35px;
     
       color: $dark-gray;
       padding-top: var(--padding-top);
@@ -57,7 +57,7 @@
     color: $dark-gray;
   
     li:not(:last-of-type) {
-      --padding-bottom: 15px;
+      --padding-bottom: 8px;
       padding-bottom: var(--padding-bottom);
 
     }
@@ -65,6 +65,7 @@
     &--homepage {
       font-weight: 700;
       color: $black;
+      --padding-bottom: 24px;
     }
   }
 
