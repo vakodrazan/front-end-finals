@@ -70,13 +70,14 @@
   }
 
   address:not(:last-of-type) {
-    --padding-bottom: 15px;
+    --padding-bottom: 27px;
       padding-bottom: var(--padding-bottom);
   }
 
   &__author__item {
     display: flex;
     flex-direction: row;
+    gap: 30px;
 
     &:hover {
       text-decoration: none;
@@ -85,12 +86,12 @@
 
     img {
       max-width: 70px;
+      height: 48px;
     }
 
     > div {
       display: flex;
       flex-direction: column;
-      padding-inline-start: 30px;
   
       > span {
         color: $dark-gray;

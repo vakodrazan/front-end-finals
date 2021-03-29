@@ -583,20 +583,21 @@ img.open {
       color: #000;
       --padding-bottom: 24px; }
   .footer address:not(:last-of-type) {
-    --padding-bottom: 15px;
+    --padding-bottom: 27px;
     padding-bottom: var(--padding-bottom); }
   .footer__author__item {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    gap: 30px; }
     .footer__author__item:hover {
       text-decoration: none;
       opacity: 0.8; }
     .footer__author__item img {
-      max-width: 70px; }
+      max-width: 70px;
+      height: 48px; }
     .footer__author__item > div {
       display: flex;
-      flex-direction: column;
-      padding-inline-start: 30px; }
+      flex-direction: column; }
       .footer__author__item > div > span {
         color: rgba(0, 0, 0, 0.5); }
       .footer__author__item > div > time {
