@@ -13,7 +13,7 @@
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: var(--fonts_size);
-  line-height: 1.5;
+  line-height: 24px;
   margin: 0;
   // overflow-x: hidden; // avoid overflowing the website
   background-color: $grey;
@@ -35,10 +35,12 @@ h3,
 h4,
 h5,
 h6 {
+  --line-height: 48px;
   margin: 0;
   font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
+  line-height: var(--line-height);
   font-size: var(--fonts_size);  // we once set the font property by default, we don't need to repeat it again but just update the value for all the headings
 }
 

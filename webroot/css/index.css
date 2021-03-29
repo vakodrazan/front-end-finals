@@ -28,7 +28,7 @@
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: var(--fonts_size);
-  line-height: 1.5;
+  line-height: 24px;
   margin: 0;
   background-color: rgba(67, 76, 204, 0.05); }
 
@@ -47,10 +47,12 @@ h3,
 h4,
 h5,
 h6 {
+  --line-height: 48px;
   margin: 0;
   font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
+  line-height: var(--line-height);
   font-size: var(--fonts_size); }
 
 a {
@@ -88,7 +90,8 @@ button {
       margin-left: auto;
       margin-right: auto;
       -ms-margin-left: auto;
-      -ms-margin-right: auto; } }
+      -ms-margin-right: auto;
+      padding: 0; } }
 
 .content {
   overflow-x: hidden;
@@ -112,6 +115,7 @@ button {
         --padding-right: 54px; } }
   .header__heading {
     --fonts_size: 24px;
+    line-height: 32px;
     text-transform: uppercase; }
     .header__heading > a {
       color: #fff; }
@@ -131,6 +135,7 @@ button {
       --fonts_size: 52px;
       --padding-top: 61px;
       --padding-bottom: 65px;
+      --line-height: 64px;
       padding-top: var(--padding-top);
       padding-bottom: var(--padding-bottom); }
       @media (min-width: 650px) {
@@ -147,7 +152,7 @@ button {
         max-width: 585px; } }
   .masthead__description {
     font-size: 18px;
-    line-height: 1.9;
+    line-height: 32px;
     padding-bottom: 82px; }
     @media (min-width: 650px) {
       .masthead__description {
@@ -160,7 +165,7 @@ button {
   background-image: url("../images/icon_menu.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  background-position: 80% 50%;
+  background-position: 100% 50%;
   color: transparent;
   cursor: pointer; }
   @media (min-width: 650px) {
@@ -255,7 +260,7 @@ button {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: 39px; } }
+      gap: 31px; } }
 
 .section_image-slider__header {
   display: none; }
@@ -266,7 +271,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 11px;
+  gap: 9px;
   overflow-x: scroll;
   margin-right: -2rem;
   scrollbar-width: none;
@@ -275,7 +280,8 @@ button {
   /* To hide the scroll bar for Internet Explorer 11 */ }
   @media (min-width: 650px) {
     .section_image-slider__gallery {
-      margin: 0; } }
+      margin: 0;
+      gap: 11px; } }
   @media (min-width: 1440px) {
     .section_image-slider__gallery {
       overflow-x: hidden; } }

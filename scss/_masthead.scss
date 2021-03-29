@@ -11,6 +11,7 @@
       --fonts_size: 52px;
       --padding-top: 61px;
       --padding-bottom: 65px;
+      --line-height: 64px;
   
       padding-top: var(--padding-top);
       padding-bottom: var(--padding-bottom);
@@ -36,12 +37,12 @@
 
   &__description {
     font-size: 18px;
-    line-height: 1.9;
+    line-height: 32px;
     padding-bottom: 82px;
 
     @media (min-width: $breakpoint-tablet) {
       max-width: $element-child-section-medium;
-}
+    }
 
     @media (min-width: $breakpoint-desktop) {
       max-width: $masthead_width;

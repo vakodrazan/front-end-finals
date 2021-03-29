@@ -5,7 +5,7 @@
 
 .section_image-slider__gallery {
   @include flex-row();
-  gap: 11px;
+  gap: 9px;
   overflow-x: scroll;
   margin-right: -2rem;
   scrollbar-width: none; /* To hide the scroll bar for Firefox */
@@ -13,6 +13,7 @@
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0;
+    gap: 11px;
   }
 
   @media (min-width: $breakpoint-desktop) {

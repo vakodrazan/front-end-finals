@@ -4,7 +4,7 @@
   background-image: url("#{$path-to-image}icon_menu.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  background-position: 80% 50%;
+  background-position: 100% 50%;
   color: transparent;
   cursor: pointer;
 
@@ -122,7 +122,7 @@
 
     @media (min-width: $breakpoint-tablet) {
       @include flex-row();
-      gap: 39px;
+      gap: 31px;
     }
   }
 }
