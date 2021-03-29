@@ -24,7 +24,8 @@
   
       > h3 {
         --fonts_size: 40px;
-        --padding-bottom: 31px;
+        --padding-bottom: 29px;
+        --line-height: 64px;
         padding-bottom: var(--padding-bottom);
   
         @media (min-width: $breakpoint-desktop) {
@@ -34,14 +35,19 @@
   
       > p {
         --fonts_size: 18px;
-        --padding-bottom: 36px;
+        --padding-bottom: 46px;
   
         font-size: var(--fonts_size);
         padding-bottom: var(--padding-bottom);
+        line-height: 32px;
+
+        @media (min-width: $breakpoint-tablet) {
+          --padding-bottom: 38px;
+        }
       }
     }
     > p {
-      --padding-bottom: 31px;
+      --padding-bottom: 55px;
       color: $dark-gray;
       padding-bottom: var(--padding-bottom);
     }
