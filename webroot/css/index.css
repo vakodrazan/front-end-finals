@@ -370,6 +370,9 @@ img.open {
     align-items: center;
     flex-wrap: wrap;
     row-gap: 40px; }
+    @media (min-width: 1440px) {
+      .section_mineral-carving__info {
+        max-width: 443px; } }
     .section_mineral-carving__info dt {
       color: rgba(0, 0, 0, 0.5);
       padding-bottom: 8px; }

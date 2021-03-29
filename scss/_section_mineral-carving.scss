@@ -60,6 +60,11 @@
     @include flex-row();
     flex-wrap: wrap; // when we use flex the element will not wrap unless we set a style to make it wrap
     row-gap: 40px;
+
+    @media (min-width: $breakpoint-desktop) {
+      max-width: 443px;
+    }
+
     dt {
         color: $dark-gray;
         padding-bottom: 8px;
