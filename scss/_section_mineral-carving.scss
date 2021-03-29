@@ -59,9 +59,10 @@
   &__info {
     @include flex-row();
     flex-wrap: wrap; // when we use flex the element will not wrap unless we set a style to make it wrap
-  
+    row-gap: 40px;
     dt {
         color: $dark-gray;
+        padding-bottom: 8px;
       }
   
     dd {
@@ -69,16 +70,12 @@
     }
 
     &--date {
-      --padding-bottom: 40px;
       flex-basis: 50%;
-      padding-bottom: var(--padding-bottom);
     }
   
   
     &--location {
-      --padding-bottom: 40px;
       flex-basis: 50%; // the element will just take 50% of the parents width
-      padding-bottom: var(--padding-bottom);
     }
   
     &--camera {

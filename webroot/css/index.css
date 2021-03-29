@@ -368,19 +368,17 @@ img.open {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    row-gap: 40px; }
     .section_mineral-carving__info dt {
-      color: rgba(0, 0, 0, 0.5); }
+      color: rgba(0, 0, 0, 0.5);
+      padding-bottom: 8px; }
     .section_mineral-carving__info dd {
       font-weight: 700; }
     .section_mineral-carving__info--date {
-      --padding-bottom: 40px;
-      flex-basis: 50%;
-      padding-bottom: var(--padding-bottom); }
+      flex-basis: 50%; }
     .section_mineral-carving__info--location {
-      --padding-bottom: 40px;
-      flex-basis: 50%;
-      padding-bottom: var(--padding-bottom); }
+      flex-basis: 50%; }
     .section_mineral-carving__info--camera {
       flex-basis: 50%; }
       .section_mineral-carving__info--camera dd {
