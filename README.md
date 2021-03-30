@@ -6,28 +6,35 @@ In this project, I use ***HTML***, ***SASS*** and ***BEM***. I use a little bit 
   - Structure the HTML nicely.
   - HTML is accessible.
   - Valid HTML.
-  - Test it, so that there is no error. Avoid any warning if possible.
+  - Test it, so that there is no error. I avoid any warning if possible.
 
   ***Styles**:
   - I work with Mobile-First by default, and Responsive.
-  - I use some custom property
-  - Use sass 
+  - Use SASS then convert it into CSS
+
+For the fonts, I used objects for each font. Then I looped through it to get each one of them wherever I need them.
 
 First things first, if you want to use this design. Let's get started. You will need the following…
 
-## Dependencies
+## File structure
 
-- Node.js
-- Figma
-- Figma Font Helper
+### SCSS folder
+- I store all of the scss file in this folder. 
+- There is a variable subfolder inside of it where I store all the files for the variables.
+- But this folder shouldn't be published.
+
+### Webroot folder
+- I store all the files and folder that are needed to be published.
 
 ## Install
 
 We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
 
-1. `npm i`
+1. `npm install`
 
 ## Getting started
+
+If you want use this repository. Fork then clone it.
 
 ### Design
 
@@ -42,8 +49,10 @@ You can find the design:
 ### Source files
 
 Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
+Also, all the images that needed are stored in the `source_materials` folder. Take a copy of them before make any changes.
 
-Since `WOFF/WOFF2` is more flexible and more suportive, use it in fonts rules.
+Since `WOFF/WOFF2` is more flexible and more suportive, use it in fonts rules. 
+Also, convert the image into `webp` to make the page load faster.
 
 ### Webroot
 
