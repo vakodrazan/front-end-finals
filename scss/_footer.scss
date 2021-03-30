@@ -12,9 +12,10 @@
     --padding-bottom: 70px;
     padding-bottom: var(--padding-bottom);
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-desktop) {
       @include flex-row();
       align-items: flex-start; // if we use align items center, everyting will be in the center but to align at the beginning
+      gap: 20px;
       padding-bottom: 0;
     }
   }
@@ -46,6 +47,13 @@
     @media (min-width: $breakpoint-tablet) {
       --elem_width: 270px;
       max-width: var(--elem_width);
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      --elem_width: 270px;
+      max-width: var(--elem_width);
+    }
+    @media (min-width: $breakpoint-desktop) {
       padding-bottom: 0;
     }
   }
@@ -120,12 +128,18 @@
         text-transform: uppercase;
       }
   
-      @media (min-width: $breakpoint-desktop) {
+      @media (min-width: $breakpoint-tablet) {
         @include flex-row();
+        gap: 20px;
       }
   
-      > address a {
+      > address {
         color: $dark-gray;
+        padding-bottom: 8px;
+
+        @media (min-width: $breakpoint-tablet) {
+          padding-bottom: 0;
+        }
       }
     }
 
