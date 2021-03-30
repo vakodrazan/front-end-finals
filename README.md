@@ -1,20 +1,14 @@
 # Photograph mockup-to-website project
 
-In this project, I use ***HTML***, ***SASS*** and ***BEM***. I use a little bit of ***Javascript*** to make the image slider work. Since I worked with html, I need to really focus on these things: 
+In this project, I use ***HTML***, ***SASS*** and ***BEM***. I use a little bit of ***Javascript*** to make the image slider work. Since I work with HTML, I need to really focus on these things: 
 
   - Use the right elements for the right job.
   - Structure the HTML nicely.
   - HTML is accessible.
-  - Valid HTML.
-  - Test it, so that there is no error. I avoid any warning if possible.
 
   ***Styles**:
   - I work with Mobile-First by default, and Responsive.
   - Use SASS then convert it into CSS
-
-For the fonts, I used objects for each font. Then I looped through it to get each one of them wherever I need them.
-
-First things first, if you want to use this design. Let's get started. You will need the following…
 
 ## File structure
 
