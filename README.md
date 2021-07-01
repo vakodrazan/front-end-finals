@@ -24,16 +24,10 @@ You can find the design:
 
 ### Source files
 
-Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
-Also, all the images that needed are stored in the `source_materials` folder. Take a copy of them before make any changes.
+Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work. Also, all the images that needed are stored in the `source_materials` folder. Take a copy of them before making any changes.
 
-I use `WOFF/WOFF2` since it is more flexible and more supportive, I use it in fonts rules.
-Also, I convert the image into `webp` to make the page load faster.
+I use `WOFF/WOFF2` since it is more flexible and more supportive, I use it in fonts rules. Also, I convert the image into webp to make the page load faster.
 
 ### Webroot
 
-As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder. Since I don't want to publish everything I stored all things that is needed to be published.
-
-### Sass
-
-I'm using the `scss` folder for all our Sass files.
+As with most setups, it's a good idea to isolate all the web files in the webroot folder. Since I don't want to publish everything I stored all things that are needed to be published.
